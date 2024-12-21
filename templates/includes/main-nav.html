@@ -17,9 +17,9 @@
                 Legos
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">All Toys</a>
-                <a href="" class="dropdown-item">Legos</a>
-                <a href="" class="dropdown-item">Other toys</a>
+                <a href="{% url 'products' %}?category=all_toys"class="dropdown-item">All Toys</a>
+                <a href="{% url 'products' %}"class="dropdown-item">Legos</a>
+                <a href="{% url 'products' %}?category=other_toys"class="dropdown-item">Other toys</a>
                
                
             </div>
@@ -30,8 +30,8 @@
                 Other toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Building Toys</a>
-                <a href="" class="dropdown-item"> Sports Toys</a>
+                <a href="{% url 'products' %}"class="dropdown-item">Building Toys</a>
+                <a href="{% url 'products' %}"class="dropdown-item"> Sports Toys</a>
             </div>
         </li>
 
