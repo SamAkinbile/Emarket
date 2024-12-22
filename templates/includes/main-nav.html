@@ -18,7 +18,7 @@
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}?category=all_toys"class="dropdown-item">All Toys</a>
-                <a href="{% url 'products' %}"class="dropdown-item">Legos</a>
+                <a href="{% url 'products' %}?category=lego"class="dropdown-item">Lego</a>
                 <a href="{% url 'products' %}?category=other_toys"class="dropdown-item">Other toys</a>
                
                
@@ -30,8 +30,8 @@
                 Other toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}"class="dropdown-item">Building Toys</a>
-                <a href="{% url 'products' %}"class="dropdown-item"> Sports Toys</a>
+                <a href="{% url 'products' %}?category=building_toys"class="dropdown-item">Building Toys</a>
+                <a href="{% url 'products' %}?category=sport_toys"class="dropdown-item"> Sports Toys</a>
             </div>
         </li>
 
