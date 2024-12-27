@@ -36,7 +36,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-samakinbile-emarket-u696p1b6m1s.ws.codeinstitute-ide.net', 'emar-423e8a6d3ba4.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-samakinbile-emarket-u696p1b6m1s.ws.codeinstitute-ide.net' ,'emar-423e8a6d3ba4.herokuapp.com'
+    'https://8000-samakinbile-emarket-u696p1b6m1s.ws.codeinstitute-ide.net' ,'https://emar-423e8a6d3ba4.herokuapp.com',
 ]
 
 
@@ -136,13 +136,8 @@ WSGI_APPLICATION = 'emarket.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-if 'DATABASE_URL' in os.environ:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-else:
     
-    DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
