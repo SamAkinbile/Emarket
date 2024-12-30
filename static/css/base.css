@@ -152,7 +152,7 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
-    font-size: 2rem; /* Adjust size as needed */
+    font-size: 1.8rem; /* Adjust size as needed */
     font-weight: bold;
     
 }

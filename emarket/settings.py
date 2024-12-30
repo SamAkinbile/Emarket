@@ -60,8 +60,10 @@ INSTALLED_APPS = [
     
     'crispy_forms',
     'profiles',
+    'blog',
     
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -71,7 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'emarket.urls'
@@ -116,9 +118,6 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
-
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'

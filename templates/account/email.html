@@ -12,7 +12,7 @@
             {% trans 'The following email addresses are associated with your account:' %}
         {% endelement %}
         {% url 'account_email' as email_url %}
-        {% element form form=form action=email_url method="post" tags="email,list" %}
+        {% element form=form action=email_url method="post" tags="email,list" %}
             {% slot body %}
                 {% csrf_token %}
                 {% for radio in emailaddress_radios %}
