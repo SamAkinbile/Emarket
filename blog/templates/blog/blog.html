@@ -1,22 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'static/css/base.css' %}">
-{% endblock %}
-<div class="blog-container">
-    <h1 class="blog-title">Building Dreams, One Brick at a Time</h1>
-    <p class="blog-subtitle">A LEGO Enthusiast's Journey</p>
+{% block content %}
+<div class="overlay">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center mt-3">
+          
+               
+<div class="container header-container">
+    <h1 class="about-section">Building Dreams, One Brick at a Time</h1>
+    <p class="about-section">A LEGO Enthusiast's Journey</p>
 
-    <div class="blog-section">
-        <h2>A Perfect Platform for Every Builder</h2>
-        <p>
+    <div class="about-section">
+        <h2 class="about-section">A Perfect Platform for Every Builder</h2>
+        <p class="about-section">
             What sets Emarket apart is its thoughtful curation of LEGO sets for different age groups.
             My nephew was overjoyed with the <strong>LEGO City Police Station Set</strong> we chose
             from the 4–10 age category. It wasn’t just about snapping bricks together; it was a fun challenge
             that taught him problem-solving skills and ignited his imagination.
         </p>
-        <p>
+        <p class="about-section">
+            For myself, I ventured into the <strong>Technic Series</strong>, designed for older teens and adults.
+            The <strong>LEGO Ferrari Daytona SP3</strong> became my personal masterpiece, a satisfying project
+            that tested my patience and rewarded me with a stunning model to display.
+        </p>
+        <p class="about-section">
             For myself, I ventured into the <strong>Technic Series</strong>, designed for older teens and adults.
             The <strong>LEGO Ferrari Daytona SP3</strong> became my personal masterpiece, a satisfying project
             that tested my patience and rewarded me with a stunning model to display.
@@ -25,9 +35,9 @@
 
     <br>
 
-    <div class="blog-section">
-        <h2>Inspiration From the Community</h2>
-        <p>
+    <div class="about-section">
+        <h2 class="about-section">Inspiration From the Community</h2>
+        <p class="about-section">
             One of the best features on Emarket is the testimonials and images shared by fellow LEGO enthusiasts.
             Browsing through photos of intricate builds and reading stories of family bonding or personal achievements
             truly inspired me. It made me feel part of a vibrant and creative community.
@@ -36,29 +46,17 @@
 
     <br>
 
-    <div class="blog-section">
-        <h2>The Joy of Sharing</h2>
-        <p>
-            After completing our LEGO projects, my nephew and I decided to share our creations in the testimonials section.
-            Seeing our builds featured alongside other incredible designs was a proud moment for both of us!
+    <div class="about-section">
+        <h2 class="about-section">LEGO: More Than Just Toys</h2>
+        <p class="about-section">
+            For me, LEGO is not just a pastime—it’s a way to connect with my inner child, discover creative outlets,
+            and bond with loved ones. Emarket has made this journey accessible and enjoyable for builders of all ages.
         </p>
-    </div>
-
-    <br>
-
-    <div class="blog-section">
-        <h2>Why Emarket is a Must-Try</h2>
-        <p>
-            Whether you’re shopping for a child or rediscovering your own passion for LEGO, Emarket is a treasure trove.
-            From easy navigation and secure payment to inspiring community stories, it has everything to make your LEGO journey unforgettable.
-        </p>
-        <p>
-            So, to anyone considering giving LEGO a try—or getting back into it—don’t wait.
-            Head to Emarket, grab your set, and start building your dreams one brick at a time!
-        </p>
-    </div>
-
-    <div class="blog-footer">
-        <p>Have a LEGO story of your own? Share it in the testimonials section of Emarket. We’d love to celebrate your creations!</p>
     </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
