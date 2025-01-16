@@ -6,7 +6,7 @@ Our goal is to make LEGO products accessible, inspiring creativity and fun for a
 
 The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.com/)
 
-![Site Mockup](docs/readme_images/site_mockup.png)
+![alt text](/media/image-42.png)
 
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
@@ -93,7 +93,7 @@ The site features an elegant and clean design, enhanced by subtle yellow-green b
 #### Colour Scheme
 Colour palette from Coolors
 
-![alt text](image.png)
+![alt text](/media/image.png)
 
 The color scheme of the LEGO Emarket site is based on a balanced mix of gold, light grey, and dark grey. These colors are deliberately chosen to maintain a neutral yet engaging environment, allowing the LEGO sets and their details to take center stage without unnecessary distractions. Gold accents add a touch of elegance and luxury, evoking the joy and excitement that LEGO brings, while still staying true to the playful spirit of the brand.
 Light grey is used throughout the background to keep the design clean and modern, while dark grey provides a contrasting element for text and key sections, ensuring clear readability and balance.
@@ -111,7 +111,7 @@ The primary font used for the body of the LEGO Emarket site is Roboto, a versati
 <details>
  <summary>Home Page</summary>
 
-![alt text](image-26.png)
+![alt text](/mdimage-26.png)
 </details>
 
 <details>
