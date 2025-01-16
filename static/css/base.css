@@ -77,7 +77,7 @@ body {
 }
 
 .overlay {
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -285,7 +285,9 @@ color: #17a2b8; /* text-info */
 
 }
 
-
+.new-class{
+    width: 100%;
+}
 
 
 .about-section {
@@ -295,16 +297,12 @@ color: #17a2b8; /* text-info */
     background-color: white;
     position: relative; /* or absolute if you want it within a specific container */
     top: 20px; 
-
-    
-    
+    overflow: hidden;
 }
 
 
 
-
-
-
+.navbar collapse
 
 /* -------------------------------- Media Queries */
 
@@ -333,7 +331,7 @@ color: #17a2b8; /* text-info */
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
-        padding-top: 116px;
+        padding-top: 200px;
     }
 
     body {
