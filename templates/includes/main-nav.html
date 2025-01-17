@@ -37,14 +37,19 @@
             </div>
         </li>
    
-                <li class="nav-item">
-                    <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'blog_home' %}">
-                        Lego Story
-                    </a>
-                </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware1-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lego Story
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="homeware1-link">
+                
+                <a href="{% url 'blog_home' %}"  class="dropdown-item"> Lego Story</a>
+                <a href="{% url 'contact_form' %}"  class="dropdown-item"> Contact Us</a>
+                <a href="{% url 'newsletter_subscription' %}"  class="dropdown-item"> Subscribe to our Newsletter</a>
+            </div>
+        </li>
         
      
-        
-       
     </ul>
 </div>
