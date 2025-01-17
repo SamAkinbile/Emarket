@@ -530,14 +530,14 @@ AWS_S3_OBJECT_PARAMETERS = {
 - Your static files and media files should be automatically linked from django to your S3 bucket.
 
 ## Forking this repository
-- Locate the repository at this link [Fresh Nest](https://github.com/AliOKeeffe/PP5-Fresh-Nest).
+- Locate the repository at this link [Emarket](https://github.com/SamAkinbile/Emarket).
 - At the top of the repository, on the right side of the page, select "Fork" from the buttons available. 
 - A copy of the repository is now created.
 
 ## Cloning this repository
 To clone this repository follow the below steps: 
 
-1. Locate the repository at this link [Fresh Nest](https://github.com/AliOKeeffe/PP5-Fresh-Nest). 
+1. Locate the repository at this link [Emarket](https://github.com/SamAkinbile/Emarket). 
 2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided. 
 3. Open **Terminal**.
 4. In Terminal, change the current working directory to the desired location of the cloned directory.
