@@ -15,8 +15,6 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
     + [Imagery](#imagery)
     + [Fonts](#fonts)
     + [Wireframes](#wireframes)
-  * [User Authentication](#user-authentication)
-  * [Form Validation](#form-validation)
   * [Database Security](#database-security)
 - [Features](#features)
   * [Header](#header)
@@ -91,9 +89,9 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 The site features an elegant and clean design, enhanced by subtle yellow-green background details that evoke a sense of luxury and sophistication.
 
 #### Colour Scheme
-Colour palette from Coolors
 
-![alt text](/media/image.png)
+Colour palette from Coolors
+![alt text](/media/colour_pattern.png)
 
 The color scheme of the LEGO Emarket site is based on a balanced mix of gold, light grey, and dark grey. These colors are deliberately chosen to maintain a neutral yet engaging environment, allowing the LEGO sets and their details to take center stage without unnecessary distractions. Gold accents add a touch of elegance and luxury, evoking the joy and excitement that LEGO brings, while still staying true to the playful spirit of the brand.
 Light grey is used throughout the background to keep the design clean and modern, while dark grey provides a contrasting element for text and key sections, ensuring clear readability and balance.
@@ -111,13 +109,13 @@ The primary font used for the body of the LEGO Emarket site is Roboto, a versati
 <details>
  <summary>Home Page</summary>
 
-![alt text](/mdimage-26.png)
+![alt text](/media/image-26.png)
 </details>
 
 <details>
  <summary>Products</summary>
 
-![alt text](image-27.png)
+![alt text](/media/image-27.png)
 
 </details>
 
@@ -125,24 +123,25 @@ The primary font used for the body of the LEGO Emarket site is Roboto, a versati
 <details>
  <summary>Checkout</summary>
 
-![alt text](image-28.png)
+![alt text](/media/image-28.png)
 </details>
 
 <details>
  <summary>Order Confirmation</summary>
 
-![alt text](image-31.png)
+![alt text](/media/image-31.png)
 </details>
 
 <details>
  <summary>Lego Testimonial</summary>
  
- ![lego_testimonial](image-37.png)
+ ![lego_testimonial](/media/image-37.png)
 </details>
 
 <details>
  <summary>Dashboard</summary>
-![alt text](image-29.png)
+
+![alt text](/media/image-29.png)
 </details>
 
 
@@ -166,7 +165,8 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 ## Features
 
 ### Header
-![hearder](image-32.png)
+
+![hearder](/media/image-32.png)
 
 **Logo**
 - A customised logo was created using Hatchful by Shopify which is a free logo generator.
@@ -178,7 +178,8 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 **Search Bar**
 
-![search](image-33.png)
+![search](/media/image-33.png)
+
 - The search bar displays above the nav bar.
 - On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar.
 - Any searched word will match itself to any text in the product's title, or description and display the results on the product's page.
@@ -191,17 +192,19 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 - The options to Sign up or Log in will change to the option to log out once a user has logged in.
 - Once a user has signed in, the 'My Profile' option becomes available in the User dropdown.
 
-![Logged In](image-34.png)
+![Logged In](/media/image-34.png)
+
 - If the superuser has signed in, more options such as 'Home Decor Management', 'Design Service Management', 'Previous Project Management' and 'Enquiries' become available in the User dropdown.
 
 **Bag Icon**
 
-![bag](image-35.png)
+![bag](/media/image-35.png)
+
 - Located on the right side of the navbar next to the User icon is the bag Icon.
 - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
 - As the user adds products to their bag, a toast message appears in the top right-hand corner of the screen informing the user that the item has been added, giving them a snapshot of the bag contents and the total cost of the bag.
 
-![bag total](image-36.png)
+![bag total](/media/image-36.png)
 - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
 
 
@@ -580,6 +583,7 @@ To clone this repository follow the below steps:
 - [Sitemap Generator](www.xml-sitemaps.com): used to create sitemap.xml 
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create the site's privacy policy
 - [Mailchimp](https://mailchimp.com/?currency=EUR): Used to create the newsletter signup functionality.
+- [chatgpt](openai.com): Openai
 
 
 ## Credits
@@ -596,4 +600,4 @@ To clone this repository follow the below steps:
 
 ## Acknowledgments
 
-Many thanks to my mentor Antonio for his support and advice. Thanks to The Code Institute slack community for their quick responses and very helpful feedback.
+Many thanks to my student care Kim for her support and advice. Thanks to The Code Institute slack community and tutor me for their quick responses and very helpful feedback.
