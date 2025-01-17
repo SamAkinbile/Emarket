@@ -4,7 +4,7 @@ Return back to the [README.md](README.md) file.
 
 ## Code Validation
 
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.Unforturnately, The errors contain in this project comes from walkthrough boutique - ado . I am not able to fix it. I do not have the expertise to do it.
+I have used the recommended [HTML W3C Validator](https://validator.w3.org/nu/#textarea) to validate all of my HTML files.Unforturnately, The errors contain in this project comes from walkthrough boutique - ado . I am not able to fix it. I do not have the expertise to do it.
 
 | Page             |    W3C Screnshots                                    |             
 | -----------------|------------------------------------------------------|
@@ -15,7 +15,25 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | All Product      |  ![alt text](/media/image-1.png)                     |
 | Buidling Toys    |  ![alt text](/media/image-1.png)                     |
 | Sports Toys      |  ![alt text](/media/image-1.png)                     |
-| Cart             |  ![alt text](/media/image-1.png)                                                    |
+| Cart             |  ![alt text](/media/image-1.png)                     |
+
+
+
+### PYTHON VALIDATION
+Python testing was done using CI Python Linter to ensure there were no syntax errors.
+
+| App           |        Screenshots                                     |                |
+|---------------|--------------------------------------------------------|----------------|
+|  Bag          | ![alt text](/media/python.png)                         | No error       |
+|  Blog         | ![alt text](/media/python.png)                         | No error       |  
+|  Checkout     | ![alt text](/media/python.png)                         | No error       |
+| emarket       | ![alt text](/media/python.png)                         | No error       |
+| homepage      | ![alt text](/media/python.png)                         | No error       |
+|  products     | ![alt text](/media/python.png)                         | No error       |
+| profiles      | ![alt text](/media/python.png)                         | No error       |
+| templates     | ![alt text](/media/python.png)                         | No error       |
+|               |                                                        |                |
+
 
 
 ### CSS
@@ -46,7 +64,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page                 |  Size   |      Screenshot                                          |  
-|----------------------|---------|----------------------------------------------------------|----------
+|----------------------|---------|----------------------------------------------------------|
 |   Home               | Mobile  |  ![alt text](/media/image-12.png)                        |
 |   Home               | Desktop |  ![alt text](/media/image-13.png)                        |
 | All Products         |Mobile   |  ![alt text](/media/image-14.png)                        |
@@ -56,4 +74,48 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Lego Testinmonial    | Mobile  |  ![alt text](/media/image-18.png)                        |
 | Lego Testimonial     |Desktop  |  ![alt text](/media/image-19.png)                        |
 
+
+## Browser Testing
+
+The Website was tested on Google Chrome, Firefox, Safari browsers with no issues noted.
+
+## Manual Testing
+
+### Site Navigation
+
+| Element                          | Action                        | Expected Result                                              | Pass/Fail |
+|----------------------------------|-------------------------------|--------------------------------------------------------------|-----------|
+| NavBar                           |                               |                                                              |           |
+| Site Name (logo area)            | Click                         | Redirect to home                                             | Pass      |
+| Search Box Function              | Enter Text and Click Search   | Search both the product's title and description for a match. | Pass      |
+| My Account Dropdown              | Click                         | Open profile dropdown                                        | Pass      |
+| Sign Up Link                     | Click                         | Redirect to Sign Up page                                     | Pass      |
+|                                  |                               | (Not visible if user in session)                             | Pass      |
+| login Link                       | Click                         | Redirect to login page                                       | Pass      |
+|                                  |                               | (Not visible if user in session)                             | Pass      |
+| Add Product                      | Click                         | Redirect to add_product page                                 | Pass      |
+|                                  |                               | (Only visible if superuser in session)                       | Pass      |
+| My Profile Link                  | Click                         | Redirect to user profile page                                | Pass      |
+|                                  |                               | (Only visible if user in session)                            | Pass      |
+| Logout Link                      | Click                         | Redirect to logout confirm page                              | Pass      |
+|                                  |                               | (Only visible if user in session)                            | Pass      |
+| Bag Link                         | Click                         | Redirect to bag page                                         | Pass      |
+|                                  |                               |                                                              |           |
+| Mobile Top Header                |                               |                                                              |           |
+| Search Icon Button               | Click                         | Open up search box                                           | Pass      |
+| Search Box Function              | Enter Text and Click Search   | Search both the product's title and description for a match. | Pass      |
+| My Account Dropdown              | Click                         | Open profile dropdown                                        | Pass      |
+| Sign Up Link                     | Click                         | Redirect to Sign Up page                                     | Pass      |
+|                                  |                               | (Not visible if user in session)                             | Pass      |
+| login Link                       | Click                         | Redirect to login page                                       | Pass      |
+|                                  |                               | (Not visible if user in session)                             | Pass      |
+|                                  |                               | (Only visible if superuser in session)                       | Pass      |
+| My Profile Link                  | Click                         | Redirect to user profile page                                | Pass      |
+|                                  |                               | (Only visible if user in session)                            | Pass      |
+| Logout Link                      | Click                         | Redirect to logout confirm page                              | Pass      |
+|                                  |                               | (Only visible if user in session)                            | Pass      |
+| Bag Link                         | Click                         | Redirect to bag page                                         | Pass      |
+|                                  |                               |                                                              | Pass      |
+|                                  |                               |                                                              |           |
+|                                  |                               |                                                              |           |
 
