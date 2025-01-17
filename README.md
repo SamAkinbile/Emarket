@@ -293,6 +293,13 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
 - If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
 
+### Testimonials
+
+![alt text](/media/testimonial.png)
+- The testimonials page can be accessed by clicking the link in the nav bar.
+- When the user navigates to the Testimonials page they can see all story generate by their experience. 
+
+
 **Total Section**
 - At the end of the line items is a summary of the costs.
 - The summary features the bags total, delivery cost and the grand total to pay.
