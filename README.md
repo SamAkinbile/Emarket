@@ -208,7 +208,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 ### Home Page
 
 **Call to Action Section**
-![alt text](image-41.png)
+![alt text](/media/image-41.png)
 
 - The home page includes a call to action section which encourages the user to 'shop now' or to browse "design services" with the message "NEW SHOPS" and an image of stylish dining room. 
 
@@ -218,16 +218,16 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 **Sign Up**
 
-![alt text](image-38.png)
+![alt text](/media/image-38.png)
 
 **Sign In**
 
 
-![alt text](image-39.png)
+![alt text](/media/image-39.png)
 
 **Log Out**
 
-![alt text](image-40.png)
+![alt text](/media/image-40.png)
 
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
@@ -236,15 +236,17 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 
 ### Profile
+
 **Delivery Details**
 
-![Delivery Details](docs/readme_images/features/delivery_info.png)
+![alt text](/media/delivery_details.png)
 - The delivery details section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
 **Order History**
 
-![Order History](docs/readme_images/features/order_history.png)
+![alt text](/media/order_history.png)
+
 - The order history section displays a list of every order the user has placed.
 - The table displays the order number, date it was ordered and the order total.
 - Clicking the order number will take the user to a summary page of that order.
@@ -252,13 +254,15 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 ### All Product (Products)
  
-![alt text](image-25.png)
-- The 'All' link will display a list of all products from the database.
+![alt text](/media/product_navbar.png)
+
+- The 'All Product' link will display a list of all products from the database.
 - Clicking any of the categories will filter the products to only show products from the category selected.
 - The category selected will display as the page heading.
 
 
-![alt text](image-24.png)
+![alt text](/media/product_card.png)
+
 - Each product card shows an image of the product, its title, excerpt and price.
 - If the user is a superuser, edit and delete buttons will appear at the bottom of the product card.
 - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
@@ -269,25 +273,20 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 - The quantity buttons are located underneath the product details and are used to add items to the bag.
 - The plus and minus buttons increase and decrease the input value.
 - If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
-- If the user manually types in a negative number or a number >99 and clicks "Add to Bag" an error button will appear informing the user of the parameters needed to be successful.
 - Clicking the 'Add to Bag' button takes the number in the input field and adds that amount of products to the bag.
 - Clicking the 'Keep Shopping' button takes the user back to the store.
 
 
 ### Bag
 
-![alt text](image-23.png)
-- When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
+![bag](/media/bag.png)
+- When the user clicks on the shopping bag icon beside the dashboard in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 
-**Quantity Buttons**
-- The quantity input box displays the product quantity the user has added to their bag.
-- The plus and minus buttons increase and decrease the input value.
-- If the value is set to 1 the minus quantity will be disabled. Respectively if the value is set to 99 the plus button is disabled.
+**Update and Remove Buttons**
 
-**Update and Delete Buttons**
-![alt text](image-22.png)
+![update and remove ](/media/update_remove.png)
 - Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
-- Clicking the 'Bin' icon button removes the item completely from the user's bag.
+- Clicking the 'Remove' icon button delete the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
 - If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
 
@@ -299,7 +298,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 ### Checkout 
 
-![alt text](image-21.png)
+![alt text](/media/cart.png)
 
 **Details**
 - Within the details section the user can fill out their contact details, delivery address, and card number.
@@ -320,7 +319,8 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 - Once the payment is processed, the webhook will search the database to confirm the order exists. If it cannot find it, it will create one using the payment information.
 
 **Confirmation**
-![alt text](image-20.png)
+
+![alt text](/media/confirmation.png)
 - Once the order has been processed the user is taken to the checkout success page.
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
