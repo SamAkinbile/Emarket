@@ -23,42 +23,48 @@
 
 ![header](/media/image-32.png)
 
-*As a Site User, I can view a list of products so that I can select a product to view.*
+*As a Site User, I want to browse a list of available products so that I can choose one to explore further.*
 
-- When the user navigates to the all products page they are presented with a list of all products from the database.
+- On the "All Products" page, users are shown a comprehensive list of products retrieved from the database, providing an easy overview of the available options.
 
 ![all product](/media/all_product.png)
 
 *As a shopper, I can click on a product so that I can read the full product details.*
+
 - When the user clicks on an individual product they are taken to the full product details.
 
 ![Product Detail](/media/product_detail.png)
 
-*As a shopper I can view a specific category of products so I can browse the type of products I'm looking for.*
-- When clicking the 'Home Decor' link in the navbar the dropdown menu will show all the different categories. Clicking any of these will take the user to the products page, showing only items from the category selected. The category selected will display as the page heading.
+*As a shopper, I want to view products by category so that I can easily browse items that match my interests.*
+
+- By clicking the 'LEGOS OR OTHER TOYS' link in the navigation bar, a dropdown menu displays all available categories. Selecting a category redirects the user to a dedicated products page showcasing items from that specific category, with the category name clearly displayed as the page heading.
 
 ![Categories](/media/categories_toys.png)
 
  ![products](/media/special_offer.png)
  
 *As a shopper I can search all products so that I can find what I am looking for*
+
 - Located above the navbar is a search bar. On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar. Any searched word will match itself to any text in the product's title, or description and display the results on the product's page.
 
 ![Search](/media/image-33.png)
 
 *As a shopper, I can sort all products so that I can view products based on price or title.*
+
 - A sort box is located on the products page where users can sort all products by price,age in ascending or descending order and by title (A-Z). 
 
 ![sort](/media/sort.png)
 
 
-*As a site user, I can read testimonials left by other customers so I see what feedback they gave on the Interior Design Services they received.*
-- When the user navigates to the Testimonials page they can see testimonials left by previous clients. Each testimonial displays the Design Service they relate to, the date and the user's name.
+*As a site user, I can read testimonials from other customers to learn about their experiences with LEGO products and services.*
+
+- When users navigate to the "LEGO Stories" page, they can view testimonials shared by previous customers. Each story highlights the LEGO products or services mentioned, along with the date and the customer's name.
 
 ![Testimonials](/media/testimonial.png)
 
 ### EPIC | User Account and Profile
 *As a site user I can register an account so that I can have a personal account.*
+
 - A sign up button is located in the user options drop down menu in the Navbar. When the user clicks the button they are taken to the sign up page.
 
 ![alt text](/media/image-38.png)
@@ -93,6 +99,7 @@
 ![Order History](/media/order_info.png)
 
 *As a site user I can recover my password in case I forget it so that I can recover access to my account.*
+
 - On the sign-in page, a link to recover your password is located underneath the sign-in button. This uses the AllAuth functionality to reset the user's password. 
 
 ### EPIC | Purchasing
