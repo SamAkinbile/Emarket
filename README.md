@@ -220,7 +220,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 **Call to Action Section**
 ![alt text](/media/image-41.png)
 
-- The home page includes a call to action section which encourages the user to 'shop now' or to browse "design services" with the message "NEW SHOPS" and an image of stylish dining room. 
+The LEGO-themed home page features an engaging call-to-action section, inviting users to "Shop Now" or explore "Design Services." This section is highlighted with the message "NEW SHOPS" alongside an image of a creatively styled LEGO, sparking inspiration and curiosity.
 
 
 
