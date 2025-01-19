@@ -1,7 +1,7 @@
-  * [User Story Testing](#user-story-testing)
-    + [EPIC | Viewing and Navigation](#epic---viewing-and-navigation)
-    + [EPIC | User Account and Profile](#epic---user-account-and-profile)
-    + [EPIC | Purchasing](#epic---purchasing)
+- [User Story Testing](#user-story-testing)
+  * [EPIC | Viewing and Navigation](#epic--viewing-and-navigation)
+  * [EPIC | User Account and Profile](#epic--user-account-and-profile)
+  * [EPIC | Purchasing](#epic--purchasing)
 - [Testing](#testing)
   * [Code Validation](#code-validation)
     + [PYTHON VALIDATION](#python-validation)
@@ -13,7 +13,6 @@
     + [Site Navigation](#site-navigation)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## User Story Testing
 
