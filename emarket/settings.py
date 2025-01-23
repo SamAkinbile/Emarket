@@ -31,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY =os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-samakinbile-emarket-u696p1b6m1s.ws.codeinstitute-ide.net', 'emar-423e8a6d3ba4.herokuapp.com']
 
