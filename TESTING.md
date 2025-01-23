@@ -56,7 +56,7 @@
 ![sort](/media/sort.png)
 
 
-*As a site user, I can read testimonials from other customers to learn about their experiences with LEGO products and services.*
+*As a site user, I can read legos story from other customers to learn about their experiences with LEGO products and services.*
 
 - When users navigate to the "LEGO Stories" page, they can view testimonials shared by previous customers. Each story highlights the LEGO products or services mentioned, along with the date and the customer's name.
 
