@@ -63,7 +63,7 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 - As a shopper, I can search all products so that I can find what I am looking for.
 - As a shopper, I can sort all products so that I can view products based on price, age or title.
 - As a site user, I can view a list of LEGO product categories so I can understand what each category offers and choose the most suitable sets for my interests and skill level.
-- As a site user, I can read testimonials left by other LEGO enthusiasts so I can see their feedback on the LEGO sets they purchased and their overall experience.
+- As a site user, I can read LEGO STORY left by other LEGO enthusiasts so I can see their feedback on the LEGO sets they purchased and their overall experience.
 - As a site user, I can view pictures of completed LEGO builds from other users so I can get inspired by their creations and build trust in the quality of the products offered.
 
 #### EPIC | User Account and Profile
@@ -159,14 +159,14 @@ The primary font used for the body of the LEGO Emarket site is Roboto, a versati
 Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/SamAkinbile/projects/3/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%5D&layout=board)
 
 
-The Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then allocated to a milestone(Epic). Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
+The Epics listed above were documented within the Github project as Milestones. A Github Issue was created for each User Story which was then assisgn, label, . Each User Story has defined acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks to facilitate the User Story's execution.
 
 
 
 ### Database Security
 The database url and secret key are stored in the env.py file to prevent unwanted connections to the database. Stripe keys and wh secret are also stored in the env.py file. 
 
-Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+
 
 
 ## Features
@@ -176,7 +176,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 ![hearder](/media/image-32.png)
 
 **Logo**
-- A customised logo was created using Hatchful by Shopify which is a free logo generator.
+- A customised logo was created using Code Institute template.
 - This logo is positioned in the top left of the navigation bar. The logo is linked to the home page for ease of navigation for the user.
 
 **Navigation Bar**
@@ -201,7 +201,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 
 ![Logged In](/media/image-34.png)
 
-- If the superuser has signed in, more options such as 'Home Decor Management', 'Design Service Management', 'Previous Project Management' and 'Enquiries' become available in the User dropdown.
+- If the user has signed in, options such as 'profile' and 'logout/login' become available in the User dropdown.
 
 **Bag Icon**
 
@@ -220,7 +220,7 @@ Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this 
 **Call to Action Section**
 ![alt text](/media/image-41.png)
 
-The LEGO-themed home page features an engaging call-to-action section, inviting users to "Shop Now" or explore "Design Services." This section is highlighted with the message "NEW SHOPS" alongside an image of a creatively styled LEGO, sparking inspiration and curiosity.
+The LEGO-themed home page features an engaging call-to-action section, inviting users to "Shop Now" or explore "more legos action." This section is highlighted with the message "NEW SHOPS" alongside an image of a creatively styled LEGO, sparking inspiration and curiosity.
 
 
 
@@ -274,7 +274,6 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 ![alt text](/media/product_card.png)
 
 - Each product card shows an image of the product, its title, excerpt and price.
-- If the user is a superuser, edit and delete buttons will appear at the bottom of the product card.
 - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
 - A sort box is located on the products page where users can sort all products by price in ascending or descending order and by title (A-Z).
 
@@ -298,20 +297,19 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 - Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
 - Clicking the 'Remove' icon button delete the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
-- If the user manually types in a number >99 and clicks 'update' an error message will display informing the user of the correct parameters.
 
 ### Testimonials
 
 ![alt text](/media/testimonial.png)
-- The testimonials page can be accessed by clicking the link in the nav bar.
+- The LEGO STORY page can be accessed by clicking the link in the nav bar.
 - When the user navigates to the Testimonials page they can see all story generate by their experience. 
 
 
 **Total Section**
 - At the end of the line items is a summary of the costs.
 - The summary features the bags total, delivery cost and the grand total to pay.
-- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold (€37.01). 
-- Beneath the grand total is two buttons. From here the user can either continue to the checkout or return to the products page by clicking 'Continue Shopping'.
+- Underneath the grand total users will find a message informing them of how much more they need to spend to receive free delivery if they haven't already met the free delivery threshold. 
+- Beneath the grand total is two buttons. From there the user can either continue to the checkout or return to the products page.
 
 ### Checkout 
 
