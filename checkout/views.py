@@ -8,6 +8,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 
+from django.contrib.auth.decorators import login_required
 from products.models import Product
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
@@ -35,7 +36,7 @@ def cache_checkout_data(request):
                                  'again later.'))
         return HttpResponse(content=e, status=400)
 
-
+@login_required
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -148,7 +149,7 @@ def checkout(request):
 
     return render(request, template, context)
 
-
+@login_required
 def checkout_success(request, order_number):
     """
     Handle successful checkouts
