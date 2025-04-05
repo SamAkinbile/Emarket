@@ -4,6 +4,8 @@ from .models import Contact
 from .forms import ContactForm
 from .models import NewsletterSubscription
 from .forms import NewsletterForm
+from .forms import EvaluationForm
+
 
 
 def newsletter_subscription(request):
@@ -28,6 +30,19 @@ def contact(request):
     else:
         form = ContactForm()
     return render(request, 'blog/contact_form.html', {'form': form})
+
+def evaluation(request):
+    if request.method == 'POST':
+        form = EvaluationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Your evaluation has been submitted successfully!")
+            return redirect('blog_home')  # Redirect after submission
+    else:
+        form = EvaluationForm()
+    return render(request, 'blog/evaluation.html', {'form': form})
+
+
 
 
 def blog_home(request):
