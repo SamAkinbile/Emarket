@@ -1,0 +1,385 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 18,
+        "fields": {
+            "password": "pbkdf2_sha256$870000$SPkWtiqiid7I4CYW1XFeof$PRMGGLmCo6Y5szY5E0L4TtU03pZHGENAmdNv5etYd8c=",
+            "last_login": "2025-03-25T18:06:24.223Z",
+            "is_superuser": true,
+            "username": "staff",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-01-13T14:45:19.435Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 19,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$jFIVkyflt722V8tpj4O4gd$EPHhX8fD8xoZfhmghCPyh3wRkzmRO58Wrgofnxg/oeQ=",
+            "last_login": "2025-01-23T12:11:04.360Z",
+            "is_superuser": false,
+            "username": "xa7jd7ax@students.codeinstitute.net",
+            "first_name": "",
+            "last_name": "",
+            "email": "xa7jd7ax@students.codeinstitute.net",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2025-01-13T21:46:41.468Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "327i866391s9760p6t1rqjcw0y55w5nb",
+        "fields": {
+            "session_data": "e30:1tRBRd:NCp-JcAzunsAwQjIgxpURjawTES6bkCv0x50QJ_Fz8c",
+            "expire_date": "2025-01-10T14:36:05.872Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3vgcm69hy20hiv3qvi3w8kbhymmtnudb",
+        "fields": {
+            "session_data": "e30:1tRBRg:gq9RSTGXlh2yLyvh8OU08_RyXoCRXZqNGvQgNGKpWmo",
+            "expire_date": "2025-01-10T14:36:08.227Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "cactqaz0lne03nimlx89hptc34wn0i84",
+        "fields": {
+            "session_data": "eyJiYWciOnsiMTc0IjoxfX0:1tY6Wh:ZckfOU-bJiHIJwXhEXmRQyZvrQDV1-X_qF3lH7guW7c",
+            "expire_date": "2025-01-29T16:45:55.222Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "eaxf6utbyklb3q02wx4s0lk4e0oxmjuh",
+        "fields": {
+            "session_data": ".eJwlyk0KgCAQBtC7fOuI_tTwKhExqJALx8iRFtHdC9q9xbtBzuXKslGVPbBERxIzbynInn2BXW78hsVBpVz59GhAAtubUQ3T2GvTzmoeOq0a1BJOphS-TT5FxrM-Ly2gIdk:1tQu11:s6HWaMlC4teURGEQQ2VL2TVR6jX4r1sMBVaz9P_7x_M",
+            "expire_date": "2025-01-09T19:59:27.859Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gc0a6t8859m80yc9ja5wpordtcjjuyob",
+        "fields": {
+            "session_data": ".eJxVjM0OgjAQhN9lz6bZAqUsR-8-Q9OfRaqmJRQSjfHdhYQLx_nmm_mCKVxKzMnwe4rzB3q8gLHrMpq18GxigB5kByforH9y2pvwsOmehc9pmaMTuyKOtohbDvy6Hu7pYLRl3NaNpCBRd05jKxnRkqdAlZIbV65Gp-3QcqiUHrYoK60tqsCNp6Ym7gh-fxcwPo8:1tx8fQ:S00isIE6llmFiLSMLQrVboumGFJrVLCmWDDss_XrD9Y",
+            "expire_date": "2025-04-08T18:06:24.233Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "homyof8aen6qmkjev6803cj1z8wr3wcx",
+        "fields": {
+            "session_data": ".eJwlyk0KgCAQBtC7fOsI7M_0KhExqJALx8iRFtHdC9q9xbtBzuXKslGVPbBERxIzbynInn2BXW78hsVBpVz59GhAAqt0P3aDmifdKqNNZ4YGtYSTKYVvk0-R8azPCy7mIeU:1tQtg3:T5jh7AuhSdDbqpl2jAg_KgkE8s-7jLLsaDdV7gHAmKU",
+            "expire_date": "2025-01-09T19:37:47.199Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "taftpjmqliypyaj60b8ng6799yeyt029",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlmON591SnrOYHm9axJAthQnNIi7Q6Q0ad_MvI-q4S1-zqmoMYVXlYvyYVsnv1VZ_MxqVFadNgrxKXkH_Aj5XnQseV1m0ruiD1r1rbC8rod7OphCnf61sQaBSRwkG2MHSD0LNY4gIlhLiMmRMQ4GNCgDN7100HBqDdvUAqrvD2lRPec:1tUtlO:2xOqCBXaBn2ayLSa97llcRmkY_7bvjT0swpANLC0OFM",
+            "expire_date": "2025-01-20T20:31:50.070Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "u72id7acixak0bhs2hno2cnz3g9e06m2",
+        "fields": {
+            "session_data": "e30:1tQu2J:45Sb5IQF8O8pBD8ZBWyBW0iM7-Nme4lyMM9U-kXvyiQ",
+            "expire_date": "2025-01-09T20:00:47.026Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "y3cb4i3dzkzdplcg3v1sqokvl9oibv6z",
+        "fields": {
+            "session_data": ".eJxVjMsOgyAUBf-FtTGAysNl9_0GcoFLpVpIVNw0_fdqY5q4nTlz3gScyyWtZsM5hoje4AviRPpUpqn627LgTHoykooYKOvwAyb6nTF1hRbciOkw_gnpkWuX0zpHWx-T-rRLfc8ep9u5vRwMsAx7LYNSneaupY0WwlIvlOeNZUpLoUHIVgJnXDtmaYsdlS5QHpi0smuE2-P9dIENTUwhk36dC36-pzxOwQ:1tbkQC:zR_A9p8mTobCG63bf6afs9QCeQ_R4HZFqqFpxcZQzhM",
+            "expire_date": "2025-02-08T17:58:16.971Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "z1qq0j4pt6ka4opewyet6m5ggoz1jydz",
+        "fields": {
+            "session_data": ".eJxVjEsOwyAMRO_idYQwEAxZdt8zRIDJp60SKZ9VlLuXSFm0qxnPG88Bbdi3od3XvLQjQwMI1W8WQ3rn6QL8ClM_izRP2zJGcVXETVfxnDl_Hnf3b2AI61C-VW2sJUdExkhtI3lk5EzWKy19pyJxlww7jCFLa2oZCtTJZ1SZtZNlNIYemgOQLDQoq2I8NLqowxJctyt6nl80yT_X:1tPOTC:ZOhF_IWvlpdPsFIAyOK8OVCu_YjW7s4dKHQnqfBGo0A",
+            "expire_date": "2025-01-05T16:06:18.445Z"
+        }
+    },
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "Emarket.example.com",
+            "name": "Emarket.com"
+        }
+    },
+    {
+        "model": "account.emailaddress",
+        "pk": 18,
+        "fields": {
+            "user": 19,
+            "email": "xa7jd7ax@students.codeinstitute.net",
+            "verified": true,
+            "primary": true
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 9,
+        "fields": {
+            "name": "lego",
+            "friendly_name": "Lego"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 11,
+        "fields": {
+            "name": "building_toys",
+            "friendly_name": "Building toys"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 12,
+        "fields": {
+            "name": "sport_toys",
+            "friendly_name": "Sport toys"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 13,
+        "fields": {
+            "name": "all_toys",
+            "friendly_name": "All toys"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 174,
+        "fields": {
+            "category": 13,
+            "name": "Lego Pirate's Cove Mansion",
+            "description": "Build a swashbuckling mansion filled with treasure-hunting adventures and secret hideouts.",
+            "price": "29.99",
+            "age": "13 years",
+            "image": "Lego01_ottHoWy.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 175,
+        "fields": {
+            "category": 9,
+            "name": "Lego Space Colony Mansion",
+            "description": "Take building to new frontiers with a futuristic mansion designed for interstellar living.",
+            "price": "12.99",
+            "age": "13  years",
+            "image": "Lego01_QE8jcxm.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 176,
+        "fields": {
+            "category": 13,
+            "name": "Lego Desert Oasis Mansion",
+            "description": "Craft a stunning mansion in a serene desert setting, complete with vibrant details and oasis charm.",
+            "price": "25.23",
+            "age": "4 - 7 years",
+            "image": "Lego02_wjMP6Mr.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 177,
+        "fields": {
+            "category": 9,
+            "name": "Lego Victorian Manor",
+            "description": "Construct a timeless and elegant Victorian mansion with intricate architectural details.",
+            "price": "19.24",
+            "age": "4 - 7 years",
+            "image": "Lego03_AjQcUTH.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 178,
+        "fields": {
+            "category": 13,
+            "name": "Lego Jungle Hideaway",
+            "description": "Escape to a tropical paradise with this mansion nestled in lush greenery and exotic surroundings.",
+            "price": "13.49",
+            "age": "13 years",
+            "image": "Lego04_8dSMqty.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 179,
+        "fields": {
+            "category": 12,
+            "name": "Lego Mountain Chalet",
+            "description": "Assemble a majestic mountainside mansion with rustic features and breathtaking views.",
+            "price": "25.49",
+            "age": "7 - 9 years",
+            "image": "lego_sepa.webp"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 180,
+        "fields": {
+            "category": 12,
+            "name": "Lego Hollywood Mansion",
+            "description": "Build a glamorous mansion fit for a star, featuring luxurious rooms and dazzling decor.",
+            "price": "14.13",
+            "age": "7 - 9 years",
+            "image": "Lego05_M2gM3eA.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 182,
+        "fields": {
+            "category": 12,
+            "name": "Lego Oceanfront Villa",
+            "description": "Bring beachside dreams to life with this stunning oceanfront mansion design.",
+            "price": "14.13",
+            "age": "13 years",
+            "image": "Lego06_cPqC57J.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 183,
+        "fields": {
+            "category": 13,
+            "name": "Lego Treehouse Mansion",
+            "description": "Merge adventure and luxury with this unique treehouse-inspired mansion.",
+            "price": "17.32",
+            "age": "13 years",
+            "image": "Lego07_AbIsnEc.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 184,
+        "fields": {
+            "category": 11,
+            "name": "Lego Futuristic Mansion",
+            "description": "Build tomorrow's home today with this cutting-edge futuristic mansion.",
+            "price": "12.39",
+            "age": "4 - 7 years",
+            "image": "Lego13_8lBiyzq.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 185,
+        "fields": {
+            "category": 11,
+            "name": "Lego Fairytale Mansion:",
+            "description": "Step into a storybook with this enchanting mansion set, perfect for imaginative tales.",
+            "price": "7.99",
+            "age": "8 -12 years",
+            "image": "Lego16_bncQoXO.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 186,
+        "fields": {
+            "category": 11,
+            "name": "Lego Cozy Cottage Mansion",
+            "description": "Combine rustic charm and grandeur with this cottage-inspired mansion set.",
+            "price": "8.99",
+            "age": "8 -12 years",
+            "image": "Lego15_eGlI7Ib.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 187,
+        "fields": {
+            "category": 11,
+            "name": "Lego Urban Retreat",
+            "description": "Design your city getaway with this chic mansion featuring intricate details and modular customization.",
+            "price": "8.25",
+            "age": "4 - 7 years",
+            "image": "Lego14_jLDSCyi.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 188,
+        "fields": {
+            "category": 11,
+            "name": "Lego Modern Villa",
+            "description": "Explore contemporary style with this sleek and stylish villa packed with creative building options.",
+            "price": "7.00",
+            "age": "8-12 years",
+            "image": "Lego13_q7aaopH.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 189,
+        "fields": {
+            "category": 9,
+            "name": "Lego Castle Estate",
+            "description": "Assemble a majestic estate with classic design, offering hours of fun for builders of all ages.",
+            "price": "12.99",
+            "age": "13years",
+            "image": "Lego10_In7iW3v.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 190,
+        "fields": {
+            "category": 9,
+            "name": "Legos",
+            "description": "The LEGO Mansion is a captivating building set designed to inspire creativity and imagination. Featuring intricate architectural details, customizable rooms, and vibrant elements, it allows builders of all ages to create their dream mansion. Perfect for family fun or solo projects, it offers endless opportunities for storytelling and display. Build your world, brick by brick!",
+            "price": "13.40",
+            "age": "13 years",
+            "image": "Lego11_UJhRXQF.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 191,
+        "fields": {
+            "category": 9,
+            "name": "Lego Dream House",
+            "description": "Build your perfect home with endless possibilities, featuring customizable rooms and vibrant details.",
+            "price": "12.66",
+            "age": "4 -7 years",
+            "image": "Lego09_EIpy1vH.png"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 192,
+        "fields": {
+            "category": 9,
+            "name": "Lego Grand Mansion",
+            "description": "Create a luxurious mansion with elegant architecture and charming features for imaginative play or display.\r\n\r\n\r\n8 -12 years",
+            "price": "9.69",
+            "age": "8 -12 years",
+            "image": "Lego11_L8DvMeQ.png"
+        }
+    }
+    
+]
