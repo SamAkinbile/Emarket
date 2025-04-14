@@ -12,11 +12,13 @@ from .forms import ProductForm
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
+
     products = Product.objects.all()
     query = None
     categories = None
     sort = None
     direction = None
+
     if request.GET:
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -31,16 +33,17 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-    if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               ("You didn't enter any search criteria!"))
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -54,6 +57,7 @@ def all_products(request):
         'current_categories': categories,
         'current_sorting': current_sorting,
     }
+
     return render(request, 'products/products.html', context)
 
 
@@ -83,10 +87,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(
-                request,
-                'Failed to add product. Please ensure the form is valid.'
-            )
+            messages.error(request,
+                           ('Failed to add product. '
+                            'Please ensure the form is valid.'))
     else:
         form = ProductForm()
 
@@ -113,10 +116,9 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(
-                request,
-                'Failed to update product. Please ensure the form is valid.'
-            )
+            messages.error(request,
+                           ('Failed to update product. '
+                            'Please ensure the form is valid.'))
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
