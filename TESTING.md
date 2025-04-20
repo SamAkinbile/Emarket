@@ -167,19 +167,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org/nu/#te
 
 
 ### PYTHON VALIDATION
-Python testing was done using CI Python Linter to ensure there were no syntax errors.
 
-| App           |        Screenshots                                     |                |
-|---------------|--------------------------------------------------------|----------------|
-|  Bag          | ![alt text](/media/python.png)                         | No error       |
-|  Blog         | ![alt text](/media/python.png)                         | No error       |  
-|  Checkout     | ![alt text](/media/python.png)                         | No error       |
-| emarket       | ![alt text](/media/python.png)                         | No error       |
-| homepage      | ![alt text](/media/python.png)                         | No error       |
-|  products     | ![alt text](/media/python.png)                         | No error       |
-| profiles      | ![alt text](/media/python.png)                         | No error       |
-| templates     | ![alt text](/media/python.png)                         | No error       |
-|               |                                                        |                |
 
 
 

@@ -1,3 +1,5 @@
+/* Fixed and validated CSS */
+
 html {
     height: 100%;
 }
@@ -6,9 +8,9 @@ body {
     background: url('/media/duplo-1981724.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #333; /* Changed from #555 to darker for better contrast */
+    color: #333;
     font-family: 'Roboto';
-    text-shadow: 0 0 2px rgba(255,255,255,0.3); /* Added subtle text shadow for better readability */
+    text-shadow: 0 0 2px rgba(255,255,255,0.3);
 }
 
 /* from Bulma */
@@ -66,6 +68,12 @@ body {
     color: #000 !important;
 }
 
+.text-success {
+    color: #218838 !important;
+    font-weight: 500;
+    text-shadow: 0 0 1px white;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -80,7 +88,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgba(50, 205, 120, 0.7); /* Added transparency */
+    background: rgba(50, 205, 120, 0.7);
     z-index: -1;
     height: 100%;
 }
@@ -100,7 +108,7 @@ body {
     height: 2px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes */
 .arrow-primary {
     border-bottom-color: #007bff !important;
 }
@@ -155,13 +163,13 @@ a.category-badge > span.badge:hover {
 /* Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
-    color: #333; /* Changed from #6c757d to darker for better contrast */
+    color: #333;
 }
 
 .allauth-form-inner-content input {
     border-color: #000;
     border-radius: 0;
-    background-color: rgba(255,255,255,0.9); /* Added slight white background */
+    background-color: rgba(255,255,255,0.9);
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -169,7 +177,7 @@ a.category-badge > span.badge:hover {
 }
 
 .allauth-form-inner-content input::placeholder {
-    color: #666; /* Darkened placeholder text */
+    color: #666;
 }
 
 .allauth-form-inner-content button,
@@ -179,9 +187,6 @@ a.category-badge > span.badge:hover {
     color: #fff;
     text-align: center;
     vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-color: #000;
     border: 1px solid #000;
@@ -189,18 +194,18 @@ a.category-badge > span.badge:hover {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {    
     color: #fff;
     background-color: #222;
-    border-color: #222;
+    border-color: #000; /* Changed to maintain contrast */
 }
 
 .allauth-form-inner-content a {
-    color: #0d6e7e; /* Darkened from #17a2b8 for better contrast */
+    color: #0d6e7e;
 }
 
 /* Product Form */
@@ -226,7 +231,7 @@ a.category-badge > span.badge:hover {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #c82333; /* Changed to maintain contrast */
     border-radius: 0;
 }
 
@@ -234,11 +239,28 @@ a.category-badge > span.badge:hover {
     width: 100%;
 }
 
+/* Add this to your CSS file */
+.text-success {
+    color: #28a745 !important; /* Bootstrap's success green */
+    text-shadow: 0 0 2px rgba(255,255,255,0.5); /* White shadow for contrast */
+    background-color: rgba(255,255,255,0.7); /* Slightly opaque white background */
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Or for a more subtle approach */
+.text-success {
+    color: #218838 !important; /* A darker green for better contrast */
+    font-weight: 500;
+    text-shadow: 0 0 1px white;
+}
+
 .about-section {
     max-width: 1300px;
     text-align: center;
     margin-bottom: 30px;
-    background-color: rgba(255,255,255,0.9); /* Added transparency */
+    background-color: rgba(255,255,255,0.9);
     position: relative;
     top: 20px; 
     overflow: hidden;
@@ -247,11 +269,13 @@ a.category-badge > span.badge:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.navbar {collapse;}
+.navbar.collapse { /* Fixed parse error */
+    /* Add navbar collapse styles here if needed */
+}
 
 .title-style {
     font-size: 2.5rem;
-    color: #222; /* Darkened from #333 */
+    color: #222;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -261,24 +285,13 @@ a.category-badge > span.badge:hover {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-
-.text-success {
-    color: #155724 !important; /* Dark green from Bootstrap's darker palette */
-    background-color: rgba(255,255,255,0.8); /* More opaque white background */
-    padding: 0.25rem 0.5rem;
-    display: inline-block;
-}
-
-
-/* -------------------------------- Media Queries */
-/* Slightly larger container on xl screens */
+/* Media Queries */
 @media (min-width: 1200px) {
     .container {
         max-width: 80%;
     }
 }
 
-/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -293,7 +306,6 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 200px;
@@ -301,6 +313,6 @@ a.category-badge > span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
-        color: #222; /* Darker text for mobile */
+        color: #222;
     }
 }
