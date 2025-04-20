@@ -15,8 +15,7 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = ['name', 'email', 'subject', 'message']
 
-from django import forms
-from .models import Evaluation
+
 
 class EvaluationForm(forms.ModelForm):
     comments = forms.CharField(widget=forms.Textarea())  # Use a plain Textarea for comments
