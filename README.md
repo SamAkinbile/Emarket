@@ -404,14 +404,14 @@ E-Market's business model is Business to Consumer (B2C). Products and services a
 ### **Investment Requirements**
 | **Area**             | **Initial Cost**    | **Ongoing Cost**                                                   |
 |----------------------|---------------------|--------------------------------------------------------------------|
-| Platform Development | $15,000 (one-time) | $300/month (maintenance)                                          |
+| Platform Development | $15,000 (one-time) | $300/month (maintenance)                                           |
 | Inventory            | $20,000            | Replenished quarterly                                              |
 | Marketing            | $8,000/year        | Adjusted based on ROI                                              |
 
 
 ## Social Media Marketing.
 
-- A social media maeketing page have been created for this buisness.
+- A social media maeketing page have been created for this buisness. Facebook work is still on going.
 
 ![FACEBOOK](media/FB.jpeg)
 
