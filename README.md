@@ -6,11 +6,18 @@ Our goal is to make LEGO products accessible, inspiring creativity and fun for a
 
 The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.com/)
 
-![alt text](/media/image-42.png)
+![alt text](media/image-42.png)
+
+
 
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
-   * [Design](#design)
+    + [EPIC | Viewing and Navigation](#epic---viewing-and-navigation)
+    + [EPIC | User Account and Profile](#epic---user-account-and-profile)
+    + [EPIC | Purchasing](#epic---purchasing)
+    + [EPIC | Admin & Store Management](#epic---admin---store-management)
+- [Data Schema and Relationships](#data-schema-and-relationships)
+  * [Design](#design)
     + [Colour Scheme](#colour-scheme)
     + [Imagery](#imagery)
     + [Fonts](#fonts)
@@ -24,9 +31,16 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
   * [Profile](#profile)
   * [All Product (Products)](#all-product--products-)
   * [Bag](#bag)
-  * [Testimonials](#testimonials)
   * [Checkout](#checkout)
+  * [Testimonials](#testimonials)
+  * [Evaluation Form](#evaluation-form)
+  * [Subscribe to Us](#subscribe-to-us)
+  * [Contact Us](#contact-us)
 - [Business Model](#business-model)
+  * [** Business Plan**](#---business-plan--)
+  * [**Key Performance Indicators (KPIs)**](#--key-performance-indicators--kpis---)
+  * [**Investment Requirements**](#--investment-requirements--)
+- [Social Media Marketing.](#social-media-marketing)
 - [Testing](#testing)
 - [Deployment - Heroku](#deployment---heroku)
   * [Create the Heroku App:](#create-the-heroku-app-)
@@ -45,8 +59,6 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 - [Acknowledgments](#acknowledgments)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 
 
 
@@ -90,7 +102,7 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 - As a store owner, I can add products through an easy-to-use interface so that I can manage the store's contents.
 - As a site user, you can complete the form of contact and we will be in touch.
 - As a site user, you can also submit a form of evaluation.
-
+- As a site owner, I created a page 404 - for page yet to be found.
 
 ## Data Schema and Relationships
 
@@ -101,9 +113,6 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 ![erd](media/yes3.png)
 ![erd](media/yes4.png)
 
-
-
-
 ### Design
 
 The site features an elegant and clean design, enhanced by subtle yellow-green background details that evoke a sense of luxury and sophistication.
@@ -111,7 +120,7 @@ The site features an elegant and clean design, enhanced by subtle yellow-green b
 #### Colour Scheme
 
 Colour palette from Coolors
-![alt text](/media/colour_pattern.png)
+![alt text](media/colour_pattern.png)
 
 The color scheme of the LEGO Emarket site is based on a balanced mix of gold, light grey, and dark grey. These colors are deliberately chosen to maintain a neutral yet engaging environment, allowing the LEGO sets and their details to take center stage without unnecessary distractions. Gold accents add a touch of elegance and luxury, evoking the joy and excitement that LEGO brings, while still staying true to the playful spirit of the brand.
 Light grey is used throughout the background to keep the design clean and modern, while dark grey provides a contrasting element for text and key sections, ensuring clear readability and balance.
@@ -143,30 +152,40 @@ The primary font used for the body of the LEGO Emarket site is Roboto, a versati
 <details>
  <summary>Checkout</summary>
 
-![alt text](/media/image-28.png)
+![alt text](media/image-28.png)
 </details>
 
 <details>
  <summary>Order Confirmation</summary>
 
-![alt text](/media/image-31.png)
+![alt text](media/image-31.png)
 </details>
 
 <details>
  <summary>Lego Testimonial</summary>
  
- ![lego_testimonial](/media/image-37.png)
+ ![lego_testimonial](media/image-37.png)
 </details>
 
 <details>
  <summary>Dashboard</summary>
 
-![alt text](/media/image-29.png)
+![alt text](media/image-29.png)
 </details>
 
 
+<details>
+ <summary>Contact Us</summary>
+
+![alt text](media/wire.png)
+</details>
 
 
+<details>
+ <summary>Evaluation</summary>
+
+![alt text](media/wireframe.png)
+</details>
 
 ## Agile Methodology
 Github projects was used to manage the development process using an agile approach. Please see link to project board [here](https://github.com/users/SamAkinbile/projects/3/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Labels%22%5D&layout=board)
@@ -186,7 +205,7 @@ The database url and secret key are stored in the env.py file to prevent unwante
 
 ### Header
 
-![hearder](/media/image-32.png)
+![hearder](media/image-32.png)
 
 **Logo**
 - A customised logo was created using Code Institute template.
@@ -198,7 +217,7 @@ The database url and secret key are stored in the env.py file to prevent unwante
 
 **Search Bar**
 
-![search](/media/image-33.png)
+![search](media/image-33.png)
 
 - The search bar displays above the nav bar.
 - On smaller screens, this bar becomes a search icon which when clicked will drop down the full bar.
@@ -212,26 +231,26 @@ The database url and secret key are stored in the env.py file to prevent unwante
 - The options to Sign up or Log in will change to the option to log out once a user has logged in.
 - Once a user has signed in, the 'My Profile' option becomes available in the User dropdown.
 
-![Logged In](/media/image-34.png)
+![Logged In](media/image-34.png)
 
 - If the user has signed in, options such as 'profile' and 'logout/login' become available in the User dropdown.
 
 **Bag Icon**
 
-![bag](/media/image-35.png)
+![bag](media/image-35.png)
 
 - Located on the right side of the navbar next to the User icon is the bag Icon.
 - Once a product is added to the bag, a number displaying the total quantity of items appears, located at the top right of the bag icon.
 - As the user adds products to their bag, a toast message appears in the top right-hand corner of the screen informing the user that the item has been added, giving them a snapshot of the bag contents and the total cost of the bag.
 
-![bag total](/media/image-36.png)
+![bag total](media/image-36.png)
 - Clicking the bag icon navigates the user to the shopping bag page which displays a summary of what's been added.
 
 
 ### Home Page
 
 **Call to Action Section**
-![alt text](/media/image-41.png)
+![alt text](media/image-41.png)
 
 The LEGO-themed home page features an engaging call-to-action section, inviting users to "Shop Now" or explore "more legos action." This section is highlighted with the message "NEW SHOPS" alongside an image of a creatively styled LEGO, sparking inspiration and curiosity.
 
@@ -258,9 +277,9 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 ### Profile
 
-**Delivery Details**
 
-![alt text](media/Lego7.png)
+![alt text](image-7.png)
+- Users can easily amend and save thier information if so wish. This can be done clicking "Save Information"
 - The delivery details section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
@@ -275,14 +294,14 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 ### All Product (Products)
  
-![alt text](/media/product_navbar.png)
+![alt text](media/product_navbar.png)
 
 - The 'All Product' link will display a list of all products from the database.
 - Clicking any of the categories will filter the products to only show products from the category selected.
 - The category selected will display as the page heading.
 
 
-![alt text](/media/product_card.png)
+![alt text](media/product_card.png)
 
 - Each product card shows an image of the product, its title, excerpt and price.
 - The products page is fully responsive, adjusting how many products are on each row depending on the user's screen size.
@@ -299,39 +318,17 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 ### Bag
 
-![bag](/media/bag.png)
+![bag](media/bag.png)
 - When the user clicks on the shopping bag icon beside the dashboard in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 
 **Update and Remove Buttons**
 
-![update and remove ](/media/update_remove.png)
+![update and remove ](media/update_remove.png)
 - Clicking the 'update' icon button saves any changes to the quantity and updates the item's subtotal.
 - Clicking the 'Remove' icon button delete the item completely from the user's bag.
 - If the user manually types in a negative number and clicks 'update', the item will be removed from the item from the bag.
 
-### Testimonials
 
-![alt text](media/lego1.png)
-- The LEGO STORY page can be accessed by clicking the link in the nav bar.
-- When the user navigates to the Testimonials page they can see all story generate by their experience. 
-
-### Evaluation Form
-
-![alt text](image-2.png)
-
-- Where user can contribute directly or indirectly to the UI/UX of the website and also contribute pertaining to the product.
-
-### Subscribe to Us
-
- ![alt text](image-4.png)
-
-- This is to get the user follow alog with our update marketing.
-
-### Contact Us
-
-- You could get to us by completing the contact us form. We shall get back to you in due course.
-
-![alt text](image-5.png)
 
 **Total Section**
 - At the end of the line items is a summary of the costs.
@@ -363,11 +360,40 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 **Confirmation**
 
-![alt text](/media/confirmation.png)
+![alt text](media/confirmation.png)
 - Once the order has been processed the user is taken to the checkout success page.
 This page summarises the completed order.
 - An email will be sent to the user with their order confirmation
 
+### Testimonials
+
+![alt text](media/lego1.png)
+- The LEGO STORY page can be accessed by clicking the link in the nav bar.
+- When the user navigates to the Testimonials page they can see all story generate by their experience. 
+
+### Evaluation Form
+
+![alt text](image-2.png)
+
+- Where user can contribute directly or indirectly to the UI/UX of the website and also contribute pertaining to the product.
+
+### Subscribe to Us
+
+ ![alt text](image-4.png)
+
+- This is to get the user follow alog with our update marketing.
+
+### Contact Us
+
+- You could get to us by completing the contact us form. We shall get back to you in due course.
+
+![alt text](image-5.png)
+
+**Page 404 ***
+
+![alt text](image-6.png)
+
+- A 404 page is the error page displayed when a requested resource cannot be found on the server.
 
 ## Business Model
 E-Market's business model is Business to Consumer (B2C). Products and services are sold directly from E-Market to consumers who are the end-users.
@@ -676,10 +702,11 @@ To clone this repository follow the below steps:
 - [Stack Overflow](https://stackoverflow.com/)
 - [Pexels](https://www.pexels.com/): Imagery on the site was sourced from Pexels.com
 - [Unsplashed](https://unsplash.com/): Imagery on the site was sourced from Unsplash
-- [Code Institute - Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1)
+- [Code Institute - Boutique Ado Walkthrough Project](https://github.com/Code-Institute-Solutions/boutique_ado_v1) -
 - [Stack Overflow](https://stackoverflow.com/questions/19619428/html5-form-validation-pattern-alphanumeric-with-spaces): To prevent form being submitted with whitespace
 
 
 ## Acknowledgments
 
 Many thanks to my student care advisors, Kim and Kieron, for their support and guidance. I also appreciate The Code Institute's tutoring service for their prompt responses and invaluable feedback."
+
