@@ -88,6 +88,19 @@ A visitor to Fresh Nest would be someone who is most likely an adult who is inte
 
 #### EPIC | Admin & Store Management
 - As a store owner, I can add products through an easy-to-use interface so that I can manage the store's contents.
+- As a site user, you can complete the form of contact and we will be in touch.
+- As a site user, you can also submit a form of evaluation.
+
+
+## Data Schema and Relationships
+
+![erd](media/special.png)
+![erd](media/yes.png)
+![erd](media/yes2.png)
+![erd](media/yes1.png)
+![erd](media/yes3.png)
+![erd](media/yes4.png)
+
 
 
 
@@ -228,16 +241,14 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 **Sign Up**
 
-![alt text](/media/image-38.png)
+![alt text](media/lego4.png)
 
 **Sign In**
 
-
-![alt text](/media/image-39.png)
+![alt text](media/lego5.png)
 
 **Log Out**
-
-![alt text](/media/image-40.png)
+![alt text](media/lego9.png)
 
 - Django allauth was installed and used to create the Sign up, Log in and Log out functionality. 
 - Success messages inform the user if they have logged in/ logged out successfully.
@@ -249,13 +260,13 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 **Delivery Details**
 
-![alt text](/media/delivery_details.png)
+![alt text](media/Lego7.png)
 - The delivery details section stores the user's delivery address and phone number.
 - The information provided here is used to autofill the delivery address when placing an order.
 
 **Order History**
 
-![alt text](/media/order_history.png)
+![alt text](media/lego8.png)
 
 - The order history section displays a list of every order the user has placed.
 - The table displays the order number, date it was ordered and the order total.
@@ -300,10 +311,27 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 ### Testimonials
 
-![alt text](/media/testimonial.png)
+![alt text](media/lego1.png)
 - The LEGO STORY page can be accessed by clicking the link in the nav bar.
 - When the user navigates to the Testimonials page they can see all story generate by their experience. 
 
+### Evaluation Form
+
+![alt text](image-2.png)
+
+- Where user can contribute directly or indirectly to the UI/UX of the website and also contribute pertaining to the product.
+
+### Subscribe to Us
+
+ ![alt text](image-4.png)
+
+- This is to get the user follow alog with our update marketing.
+
+### Contact Us
+
+- You could get to us by completing the contact us form. We shall get back to you in due course.
+
+![alt text](image-5.png)
 
 **Total Section**
 - At the end of the line items is a summary of the costs.
@@ -313,7 +341,7 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 ### Checkout 
 
-![alt text](/media/cart.png)
+![alt text](image-3.png)
 
 **Details**
 - Within the details section the user can fill out their contact details, delivery address, and card number.
@@ -344,6 +372,48 @@ This page summarises the completed order.
 ## Business Model
 E-Market's business model is Business to Consumer (B2C). Products and services are sold directly from E-Market to consumers who are the end-users.
 
+
+
+### ** Business Plan**
+
+| **Section**          | **Key Components**                                                                 | **Details**                                                                 |
+|----------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Business Overview** | - Business Name<br>- Legal Structure<br>- Mission Statement                        | EMAR - LEGO-focused e-commerce platform. Mission: "Deliver authentic LEGO experiences with seamless shopping." |
+| **Market Analysis**   | - Target Audience<br>- Competitors<br>- Market Trends                              | Parents (25-45), collectors. Competitors: LEGO Store, Amazon. Trend: Niche LEGO resale market growing at 8% CAGR. |
+| **Revenue Streams**   | - Product Sales<br>- Subscriptions (Newsletter Premium)<br>- Future: Workshops     | 80% from LEGO sets, 15% accessories, 5% customization services.            |
+| **Cost Structure**    | - Inventory<br>- Platform Hosting<br>- Marketing                                   | Heroku hosting ($50/mo), Shopify payments (2.9% + $0.30/transaction), Google Ads ($500/mo). |
+| **Marketing Strategy**| - SEO<br>- Social Media<br>- Email Campaigns                                       | Pinterest/Instagram LEGO builds, Google Shopping ads, abandoned cart emails. |
+| **Operations**       | - Suppliers<br>- Fulfillment<br>- Customer Support                                | Dropship from LEGO-certified EU/US warehouses. Zendesk for support tickets. |
+| **Financial Projections** | - Year 1-3 Sales<br>- Break-even Analysis                                    | Year 1: $120K revenue, 15% profit margin. Break-even at 800 orders/month.  |
+| **Technology Stack**  | - Frontend<br>- Backend<br>- Payment Gateway                                      | Django/PostgreSQL, Stripe, AWS S3 for media.                               |
+| **Risk Management**   | - Inventory Risks<br>- Fraud Prevention                                           | Use LEGO's "Dropship" program to avoid overstocking. Implement Stripe Radar for fraud. |
+| **Milestones**       | - Launch Phase<br>- Expansion                                                     | Q1: Launch core store. Q3: Add AR LEGO preview feature.                    |
+
+---
+
+### **Key Performance Indicators (KPIs)**
+| **Metric**           | **Target**          | **Measurement**                                                     |
+|----------------------|---------------------|---------------------------------------------------------------------|
+| Monthly Active Users | 5,000               | Google Analytics                                                    |
+| Conversion Rate      | 3.5%                | Orders ÷ Sessions                                                   |
+| Average Order Value  | $85                 | Revenue ÷ Orders                                                    |
+| Customer Retention   | 30% repeat buyers   | Shopify CRM tracking                                                |
+
+---
+
+### **Investment Requirements**
+| **Area**             | **Initial Cost**    | **Ongoing Cost**                                                   |
+|----------------------|---------------------|--------------------------------------------------------------------|
+| Platform Development | $15,000 (one-time) | $300/month (maintenance)                                          |
+| Inventory            | $20,000            | Replenished quarterly                                              |
+| Marketing            | $8,000/year        | Adjusted based on ROI                                              |
+
+
+## Social Media Marketing.
+
+- A social media maeketing page have been created for this buisness.
+
+![FACEBOOK](media/FB.jpeg)
 
 ## Testing
 Testing and results can be found [text](TESTING.md)
@@ -612,4 +682,4 @@ To clone this repository follow the below steps:
 
 ## Acknowledgments
 
-Many thanks to my student care Kim for her support and advice. Thanks to The Code Institute slack community and tutor me for their quick responses and very helpful feedback.
+Many thanks to my student care advisors, Kim and Kieron, for their support and guidance. I also appreciate The Code Institute's tutoring service for their prompt responses and invaluable feedback."

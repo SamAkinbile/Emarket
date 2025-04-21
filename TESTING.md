@@ -14,7 +14,151 @@
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+### Manual Testing
+
+### **EMAR Web App - Manual Testing Plan**
+**Testing Approach:**  
+- **Roles**: Guest, Registered User, Admin  
+- **Devices**: Desktop (Chrome/Firefox), Tablet, Mobile (iOS/Android)  
+- **Special Cases**: Empty states, error handling, edge cases  
+
+---
+
+### **EPIC 1: Viewing & Navigation**  
+#### **1.1 Global Navigation**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Navbar responsiveness | 1. Resize browser to mobile<br>2. Click hamburger menu | Menu collapses/expands correctly | Pass |
+| Search functionality | 1. Type "LEGO" in search<br>2. Submit | Shows all products with "LEGO" in title/description | Pass |
+| Category filtering | 1. Click "LEGO" category | Only displays LEGO products | Pass |
+
+#### **1.2 Product Pages**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Product sorting | 1. Select "Price (high-low)"<br>2. Verify order | Products sorted correctly | Pass |
+| Product details | 1. Click any product<br>2. Check quantity selector | Rejects values <1 or >99 | Pass |
+
+---
+
+### **EPIC 2: User Account**  
+#### **2.1 Authentication**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Registration | 1. Submit duplicate email | Shows "Email already exists" error | Pass |
+| Password reset | 1. Request reset<br>2. Check email | Receives reset link within 2 mins | Pass |
+
+#### **2.2 Profile Management**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Address saving | 1. Check "Save to profile"<br>2. Place order | Address auto-fills next checkout | Pass |
+| Order history | 1. Click past order number | Shows correct order details | Pass |
+
+---
+
+### **EPIC 3: Purchasing**  
+#### **3.1 Shopping Bag**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Quantity adjustment | 1. Set quantity to 0<br>2. Refresh | Empties bag automatically | Pass |
+| Bag total | 1. Add 2 products<br>2. Check total | Calculates sum correctly | Pass |
+
+#### **3.2 Checkout**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Guest checkout | 1. Proceed as guest<br>2. Complete order | Receives confirmation email | Pass |
+| Payment failure | 1. Enter expired card | Shows "Payment declined" error | Pass |
+
+---
+
+### **EPIC 4: Admin Features**  
+#### **4.1 Product Management**  
+| Test Case | Steps | Expected Result | Pass/Fail |
+|-----------|-------|-----------------|-----------|
+| Add product | 1. Submit empty form | Shows field errors | Pass |
+| Delete product | 1. Confirm deletion | Removes from database | Pass |
+
+---
+
+### **Special Test Cases**  
+| Scenario | Steps | Expected Result | Pass/Fail |
+|----------|-------|-----------------|-----------|
+| Empty bag checkout | 1. Directly visit /checkout | Redirects to products with warning | Pass |
+| Mobile payment | 1. Use Apple Pay on iPhone | Completes transaction | Pass |
+
+
+
+
+###  Authentication Gatekeeping**  
+| **Test Scenario** | **Steps** | **Expected Result** | **Pass/Fail** |  
+|-------------------|----------|---------------------|---------------|  
+| **Anonymous user tries to checkout** | 1. Add items to bag<br>2. Click "Secure Checkout" | Redirects to login page with toast: "Please sign in to proceed" | ✅ |  
+| **Session expires during checkout** | 1. Start checkout<br>2. Let session expire<br>3. Submit form | Redirects to login with error: "Session expired" | ✅ |  
+
+
+
+### **3. Edge Cases**  
+| **Scenario** | **Verification** |  
+|-------------|------------------|  
+| **URL hacking attempt** | Direct access to `/checkout` → 302 redirect to `/accounts/login/?next=/checkout` |  
+| **Cart tampering** | Modify item price via DevTools → Backend rejects mismatched totals |  
+
+---
+
+### **4. Admin-Specific Tests**  
+| **Test Case** | **Steps** | **Expected Result** |  
+|--------------|----------|---------------------|  
+| Order fulfillment | 1. Admin marks order as "Shipped" | Customer receives notification email |  
+
+
+
+
+
 ## User Story Testing
+
+### **1. EPIC: Navigation & Product Browsing**  
+| **To Do** | **In Progress** | **Done** |  
+|-----------|----------------|----------|  
+| - Improve mobile responsiveness for navbar/search | - Optimize category dropdown performance | ✅ Navbar visible on all pages (responsive) |  
+| - Add breadcrumbs for better UX | - Test search bar on small screens | ✅ "All Products" page displays DB items |  
+| | | ✅ Product detail pages implemented |  
+| | | ✅ Category filtering (e.g., LEGO/toys) |  
+| | | ✅ Search functionality (title/description) |  
+| | | ✅ Product sorting (price, age, title) |  
+
+---
+
+### **2. EPIC: User Account & Profile**  
+| **To Do** | **In Progress** | **Done** |  
+|-----------|----------------|----------|  
+| - Add social auth (Google/Facebook) | - Test password reset flow | ✅ User registration/signup |  
+| - Implement email verification | | ✅ Login/logout functionality |  
+| | | ✅ Toast messages for login status |  
+| | | ✅ Profile: Save personal details |  
+| | | ✅ Order history view |  
+| | | ✅ Password recovery (AllAuth) |  
+
+---
+
+### **3. EPIC: Purchasing & Checkout**  
+| **To Do** | **In Progress** | **Done** |  
+|-----------|----------------|----------|  
+| - Add Apple Pay/Google Pay | - Test guest checkout edge cases | ✅ Add to bag (quantity selector) |  
+| - Implement wishlist feature | - Audit Stripe security | ✅ Bag total updates dynamically |  
+| | | ✅ Shopping bag summary page |  
+| | | ✅ Checkout summary with item details |  
+| | | ✅ Stripe payment integration |  
+| | | ✅ Guest checkout supported |  
+| | | ✅ Order confirmation page |  
+| | | ✅ Email confirmation sent |  
+
+graph TD
+    A[User Visits Site] --> B{Logged In?}
+    B -->|Yes| C[See Profile Link]
+    B -->|No| D[See Newsletter Signup]
+    C --> E[Access Order History]
+    D --> F[Popup Incentive]
+
+
 
 ### EPIC | Viewing and Navigation
 *As a Site User, I can intuitively navigate around the site so that I can find content.*
@@ -27,13 +171,13 @@
 
 - On the "All Products" page, users are shown a comprehensive list of products retrieved from the database, providing an easy overview of the available options.
 
-![all product](/media/all_product.png)
+![alt text](media/lego3.png)
 
 *As a shopper, I can click on a product so that I can read the full product details.*
 
 - When the user clicks on an individual product they are taken to the full product details.
 
-![Product Detail](/media/product_detail.png)
+![alt text](media/lego2.png)
 
 *As a shopper, I want to view products by category so that I can easily browse items that match my interests.*
 
@@ -60,21 +204,21 @@
 
 - When users navigate to the "LEGO Stories" page, they can view testimonials shared by previous customers. Each story highlights the LEGO products or services mentioned, along with the date and the customer's name.
 
-![Testimonials](/media/testimonial.png)
+![alt text](media/lego1.png)
 
 ### EPIC | User Account and Profile
 *As a site user I can register an account so that I can have a personal account.*
 
 - A sign up button is located in the user options drop down menu in the Navbar. When the user clicks the button they are taken to the sign up page.
 
-![alt text](/media/image-38.png)
+![alt text](media/lego4.png)
 
 *As a site user I can log in or log out of my account so that I can keep my account secure.*
 - If the user has registered an account they can log in or log out by clicking the links in the user options drop down menu in the Navbar.
 
-![alt text](/media/image-39.png) 
+![alt text](media/lego5.png)
 
-![alt text](/media/image-40.png)
+![alt text](image-1.png)
 
 *As a site user I can see my login status so that I know if I'm logged in or out.*
 
@@ -88,15 +232,14 @@
 
   - Users can enter and save their personal details directly on their profile page. These details will automatically prepopulate when placing future orders.  
   - While placing a new order, users can check a box under the delivery information to save the details they've just entered for future use.  
-
-![Delivery Details](/media/delivery_info.png)
+![alt text](media/lego6.png)
 
 *As a site user I can view my order history so that I can remember what purchases I've made.*
 
 - Once a user has created an account and placed an order, they can view the order history on their profile page.
 - Clicking the order number will take you to a summary page of that order.
 
-![Order History](/media/order_info.png)
+![alt text](media/lego8.png)
 
 *As a site user I can recover my password in case I forget it so that I can recover access to my account.*
 
@@ -108,7 +251,7 @@
 - Within the product detail page there is a quantity selector and an Add to Bag button. Shoppers can adjust the quantity by using the buttons located on either side of the input, or by typing in the amount.
 - When the user clicks on the add to bag button, the chosen quantity of the product is added to the user's shopping bag.
 
-![Product Detail](/media/product_me.png)
+
 
 *As a shopper I can view a running total of my shopping bag as I am shopping so that I can see how much it costs in total.*
 
@@ -120,13 +263,13 @@
 - When the user clicks on the shopping bag icon in the nav bar they are taken to the shopping bag page which shows the products which the user has added to their cart, unit price, quantity and subtotal.
 - The bottom of the page shows the bag total, delivery costs and then the grand total.
 
-![shopping bag](/media/shopping_cart.png)
+![alt text](media/shopping_bag.png)
 
 
 *As a shopper, I can see a summary of my shopping cart when I checkout so that I know what products are included and the total cost before I commit to purchasing.*
 - On the Checkout page the user can see a summary of the line items within their order including a thumbnail image, the product name, the quantity, the unit cost and the overall total order cost on the right-hand side.
 
-![checkout](/media/checkout_cart.png)
+![alt text](image.png)
 
 *As a shopper, I can easily enter my payment information securely so that I can purchase my chosen products quickly with no issues.*
 - When the user navigates to the checkout page, they can see the Stripe Elements UI where they can enter their card details securely and pay for their order.
@@ -139,7 +282,7 @@
 *As a shopper, I can view an order confirmation after checkout so that I know my purchase was successful.*
 - When the user submits the checkout form, they are redirected to a Checkout Success page where they can see an order confirmation and a summary of their order.
 
-![order_confirmation](/media/delivery_details.png)
+![alt text](media/Lego7.png)
 
 *As a shopper, I can receive an email confirmation of my order so that I have a record of my purchase.*
 - When the user has submitted their order they will receive a confirmation email to the email address they entered in their order form containing all the details of the order.
