@@ -13,8 +13,6 @@
     - [4.1 Product Management](#41-product-management)
   - [Special Test Cases](#special-test-cases)
   - [Authentication Gatekeeping](#authentication-gatekeeping)
-  - [Edge Cases](#3-edge-cases)
-  - [Admin-Specific Tests](#4-admin-specific-tests)
 - [User Story Testing](#user-story-testing)
   - [EPIC: Navigation & Product Browsing](#1-epic-navigation--product-browsing)
   - [EPIC: User Account & Profile](#2-epic-user-account--profile)

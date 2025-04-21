@@ -8,7 +8,7 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 
 ![alt text](media/image-42.png)
 
-
+## Table of Contents
 
 - [User Experience (UX)](#user-experience--ux-)
   * [User Stories](#user-stories)
@@ -38,10 +38,11 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
   * [Contact Us](#contact-us)
 - [Business Model](#business-model)
   * [** Business Plan**](#---business-plan--)
-  * [**Key Performance Indicators (KPIs)**](#--key-performance-indicators--kpis---)
-  * [**Investment Requirements**](#--investment-requirements--)
+  * [*Key Performance Indicators (KPIs)](#--key-performance-indicators--kpis---)
+  * [Investment Requirements)](#--investment-requirements--)
 - [Social Media Marketing.](#social-media-marketing)
 - [Testing](#testing)
+  * [Find testing here[text](TESTING.md)](#find-testing-here-text--testingmd-)
 - [Deployment - Heroku](#deployment---heroku)
   * [Create the Heroku App:](#create-the-heroku-app-)
   * [Attach the Postgres database:](#attach-the-postgres-database-)
@@ -59,6 +60,7 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 - [Acknowledgments](#acknowledgments)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 
 
@@ -122,16 +124,13 @@ The site features an elegant and clean design, enhanced by subtle yellow-green b
 Colour palette from Coolors
 ![alt text](media/colour_pattern.png)
 
-The color scheme of the LEGO Emarket site is based on a balanced mix of gold, light grey, and dark grey. These colors are deliberately chosen to maintain a neutral yet engaging environment, allowing the LEGO sets and their details to take center stage without unnecessary distractions. Gold accents add a touch of elegance and luxury, evoking the joy and excitement that LEGO brings, while still staying true to the playful spirit of the brand.
-Light grey is used throughout the background to keep the design clean and modern, while dark grey provides a contrasting element for text and key sections, ensuring clear readability and balance.
-
-Care was taken to establish a strong contrast between the background colors and text throughout the site, ensuring maximum user accessibility. The neutral tones create a user-friendly experience, allowing the LEGO products to shine while ensuring a smooth browsing experience for all visitors.
+Drawing on the design principles in base.css, the LEGO Emarket site embraces a refined palette where light grey grounds the visuals in a clean, modern aesthetic and dark grey is used for crisp, high-contrast text and UI elements. Strategic gold accents introduce a sense of elegance and playfulness, allowing product details to shine without distraction. Strong contrast between the background and foreground elements ensures that every detail—from the immersive, fixed background image to the clearly defined interactive components—remains accessible and engaging for all users.
 
 #### Imagery
-The site features a prominent static image on the homepage showcasing an exciting and engaging LEGO set. The color scheme of the site, with its green and yellow tones, complements this main image, reflecting the vibrant, playful, and imaginative nature of LEGO building. These colors provide a lively and energetic feel, enhancing the overall experience for users.
+The homepage features a striking fixed background image that instantly immerses visitors in an exciting LEGO set display. The integration of vibrant green overlays and subtle yellow accents mirrors the energetic, playful, and imaginative essence of LEGO building, ensuring that every element—from dynamic imagery to interactive UI components—resonates with vitality. Alongside this visual centerpiece, the site's responsive design guarantees that the image maintains its impact across all devices, seamlessly adapting to different screen sizes without compromising on quality. Clear, crisp typography in dark grey provides an excellent contrast against the lively greens and yellows, making key messages and details stand out while preserving the playful elegance of the brand. Moreover, carefully implemented animations and refined layout choices guide users effortlessly through the site, reinforcing the core values of creativity and innovation that lie at the heart of LEGO building.
 
 #### Fonts
-The primary font used for the body of the LEGO Emarket site is Roboto, a versatile and modern sans-serif font that ensures optimal readability and a smooth browsing experience. This font was imported via Google Fonts to guarantee consistent appearance across different devices.
+The LEGO Emarket site relies on the clean, modern lines of the Roboto font for its body copy, creating a seamless reading experience that perfectly complements the overall design. As a versatile, contemporary sans-serif typeface, Roboto not only enhances readability but also infuses the site with a subtle sophistication. Imported via Google Fonts, it ensures that the playful yet refined style is maintained consistently across every device, reinforcing the brand's commitment to both form and function.
 
 #### Wireframes
 
@@ -199,8 +198,6 @@ The Epics listed above were documented within the Github project as Milestones. 
 The database url and secret key are stored in the env.py file to prevent unwanted connections to the database. Stripe keys and wh secret are also stored in the env.py file. 
 
 
-
-
 ## Features
 
 ### Header
@@ -249,7 +246,6 @@ The database url and secret key are stored in the env.py file to prevent unwante
 
 ### Home Page
 
-**Call to Action Section**
 ![alt text](media/image-41.png)
 
 The LEGO-themed home page features an engaging call-to-action section, inviting users to "Shop Now" or explore "more legos action." This section is highlighted with the message "NEW SHOPS" alongside an image of a creatively styled LEGO, sparking inspiration and curiosity.
@@ -276,7 +272,6 @@ The LEGO-themed home page features an engaging call-to-action section, inviting 
 
 
 ### Profile
-
 
 ![alt text](image-7.png)
 - Users can easily amend and save thier information if so wish. This can be done clicking "Save Information"
@@ -442,7 +437,7 @@ E-Market's business model is Business to Consumer (B2C). Products and services a
 ![FACEBOOK](media/FB.jpeg)
 
 ## Testing
-Testing and results can be found [text](TESTING.md)
+### Find testing here[text](TESTING.md)
 
 ## Deployment - Heroku
 
@@ -708,5 +703,5 @@ To clone this repository follow the below steps:
 
 ## Acknowledgments
 
-Many thanks to my student care advisors, Kim and Kieron, for their support and guidance. I also appreciate The Code Institute's tutoring service for their prompt responses and invaluable feedback."
+Many thanks to my student care advisors, Mark, Kim and Kieron, for their support and guidance. I also appreciate The Code Institute's tutoring service for their prompt responses and invaluable feedback."
 
