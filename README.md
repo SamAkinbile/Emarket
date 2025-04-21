@@ -61,6 +61,78 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
+Here's a well-structured **Project Board** organized by EPICs and User Stories, with clear status tracking:
+
+# Emarket Project Board
+
+## 📋 EPIC 1: Viewing & Navigation
+| User Story | Status | Component | Test Status |
+|------------|--------|-----------|-------------|
+| Intuitive site navigation | ✅ Done | Navbar | ✅ Passed |
+| Product list view | ✅ Done | Products | ✅ Passed |
+| Category browsing | ✅ Done | Categories | ✅ Passed |
+| Product search | ✅ Done | Search | ✅ Passed |
+| Product sorting | ✅ Done | Sorting | ✅ Passed |
+| LEGO category showcase | 🚧 In Progress | Categories | ⚠️ Testing |
+| LEGO STORY section | ✅ Done | Blog | ✅ Passed |
+| User build gallery | ❌ Backlog | Gallery | ❌ Pending |
+
+## 👤 EPIC 2: User Account
+| User Story | Status | Component | Test Status |
+|------------|--------|-----------|-------------|
+| User registration | ✅ Done | Auth | ✅ Passed |
+| Login/logout | ✅ Done | Auth | ✅ Passed |
+| Login status visibility | ✅ Done | UI | ✅ Passed |
+| Profile management | ✅ Done | Profile | ✅ Passed |
+| Order history | ✅ Done | Profile | ✅ Passed |
+| Password recovery | ✅ Done | Auth | ✅ Passed |
+
+## 💳 EPIC 3: Purchasing
+| User Story | Status | Component | Test Status |
+|------------|--------|-----------|-------------|
+| Add to bag | ✅ Done | Cart | ✅ Passed |
+| Bag total display | ✅ Done | Cart | ✅ Passed |
+| Bag contents view | ✅ Done | Cart | ✅ Passed |
+| Quantity adjustment | ✅ Done | Cart | ✅ Passed |
+| Checkout summary | 🚧 In Progress | Checkout | ⚠️ Testing |
+| Secure payments | 🚧 In Progress | Payments | ❌ Pending |
+
+
+## ⚙️ EPIC 4: Admin & Management
+| User Story | Status | Component | Test Status |
+|------------|--------|-----------|-------------|
+| Product management | 🚧 In Progress | Admin | ⚠️ Testing |
+| Contact form | ✅ Done | Contact | ✅ Passed |
+| Evaluation form | ✅ Done | Forms | ✅ Passed |
+| 404 page | ✅ Done | Errors | ✅ Passed |
+
+## 📊 Progress Metrics
+| EPIC | Completion | Test Coverage |
+|------|------------|---------------|
+| Viewing | 85% | 92% |
+| Accounts | 100% | 100% |
+| Purchasing | 60% | 45% |
+| Admin | 75% | 80% |
+
+## 🔗 Resources
+- [Stripe Docs](https://stripe.com/docs) `rel="noopener noreferrer"`
+- [Django AllAuth](https://django-allauth.readthedocs.io/) `rel="noopener"`
+
+## 👥 Team Responsibilities
+| Area | Owner | Status |
+|------|-------|--------|
+| Frontend | @DevA | Active |
+| Backend | @DevB | Active |
+| Testing | @QA | Active |
+
+Key Features:
+1. **Color-coded statuses**: ✅ Done, 🚧 In Progress, ❌ Backlog
+2. **Test coverage tracking** for each component
+3. **EPIC-level progress metrics**
+4. **External resources** with proper `rel` attributes
+5. **Clear ownership** of components
+6. **Mobile-responsive** layout
+
 
 
 
