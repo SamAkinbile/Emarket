@@ -10,60 +10,75 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 
 ## Table of Contents
 
-- [User Experience (UX)](#user-experience--ux-)
-  * [User Stories](#user-stories)
-    + [EPIC | Viewing and Navigation](#epic---viewing-and-navigation)
-    + [EPIC | User Account and Profile](#epic---user-account-and-profile)
-    + [EPIC | Purchasing](#epic---purchasing)
-    + [EPIC | Admin & Store Management](#epic---admin---store-management)
-- [Data Schema and Relationships](#data-schema-and-relationships)
-  * [Design](#design)
-    + [Colour Scheme](#colour-scheme)
-    + [Imagery](#imagery)
-    + [Fonts](#fonts)
-    + [Wireframes](#wireframes)
-- [Agile Methodology](#agile-methodology)
-  * [Database Security](#database-security)
-- [Features](#features)
-  * [Header](#header)
-  * [Home Page](#home-page)
-  * [User Account Pages](#user-account-pages)
-  * [Profile](#profile)
-  * [All Product (Products)](#all-product--products-)
-  * [Bag](#bag)
-  * [Checkout](#checkout)
-  * [Testimonials](#testimonials)
-  * [Evaluation Form](#evaluation-form)
-  * [Subscribe to Us](#subscribe-to-us)
-  * [Contact Us](#contact-us)
-- [Business Model](#business-model)
-  * [** Business Plan**](#---business-plan--)
-  * [*Key Performance Indicators (KPIs)](#--key-performance-indicators--kpis---)
-  * [Investment Requirements)](#--investment-requirements--)
-- [Social Media Marketing.](#social-media-marketing)
-- [Testing](#testing)
-  * [Find testing here[text](TESTING.md)](#find-testing-here-text--testingmd-)
-- [Deployment - Heroku](#deployment---heroku)
-  * [Create the Heroku App:](#create-the-heroku-app-)
-  * [Attach the Postgres database:](#attach-the-postgres-database-)
-  * [Update Heroku Config Vars](#update-heroku-config-vars)
-  * [Deploy](#deploy)
-- [AWS Set Up](#aws-set-up)
-  * [AWS S3 Bucket](#aws-s3-bucket)
-  * [IAM](#iam)
-  * [Connecting S3 to Django](#connecting-s3-to-django)
-- [Forking this repository](#forking-this-repository)
-- [Cloning this repository](#cloning-this-repository)
-- [Languages](#languages)
-- [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-- [Credits](#credits)
-- [Acknowledgments](#acknowledgments)
+- [Project Board](#project-board)
+  * [📋 EPIC 1: Viewing & Navigation](#---epic-1--viewing---navigation)
+  * [👤 EPIC 2: User Account](#---epic-2--user-account)
+  * [💳 EPIC 3: Purchasing](#---epic-3--purchasing)
+  * [⚙️ EPIC 4: Admin & Management](#---epic-4--admin---management)
+  * [📊 Progress Metrics](#---progress-metrics)
+  * [🔗 Resources](#---resources)
+  * [👥 Team Responsibilities](#---team-responsibilities)
+  * [User Experience (UX)](#user-experience--ux-)
+    + [User Stories](#user-stories)
+      - [EPIC | Viewing and Navigation](#epic---viewing-and-navigation)
+      - [EPIC | User Account and Profile](#epic---user-account-and-profile)
+      - [EPIC | Purchasing](#epic---purchasing)
+      - [EPIC | Admin & Store Management](#epic---admin---store-management)
+  * [Data Schema and Relationships](#data-schema-and-relationships)
+    + [Design](#design)
+      - [Colour Scheme](#colour-scheme)
+      - [Imagery](#imagery)
+      - [Fonts](#fonts)
+      - [Wireframes](#wireframes)
+  * [Agile Methodology](#agile-methodology)
+    + [Database Security](#database-security)
+  * [Features](#features)
+    + [Header](#header)
+    + [Home Page](#home-page)
+    + [User Account Pages](#user-account-pages)
+    + [Profile](#profile)
+    + [All Product (Products)](#all-product--products-)
+    + [Bag](#bag)
+    + [Checkout](#checkout)
+    + [Testimonials](#testimonials)
+    + [Evaluation Form](#evaluation-form)
+    + [Subscribe to Us](#subscribe-to-us)
+    + [Contact Us](#contact-us)
+  * [Business Model](#business-model)
+    + [Business Plan](#---business-plan--)
+    + [Key Performance Indicators (KPIs)](#--key-performance-indicators--kpis---)
+    + [Investment Requirements](#--investment-requirements--)
+  * [Social Media Marketing.](#social-media-marketing)
+  * [ SEO & Technical Setup](#---seo---technical-setup)
+  * [ EPIC 1: Viewing & Navigation](#---epic-1--viewing---navigation-1)
+  * [ EPIC 2: User Account](#---epic-2--user-account-1)
+  * [ EPIC 3: Purchasing](#---epic-3--purchasing-1)
+  * [ EPIC 4: Admin](#---epic-4--admin)
+  * [ Technical Backlog](#---technical-backlog)
+  * [📊 SEO Metrics](#---seo-metrics)
+  * [🔗 Resources](#---resources-1)
+  * [Testing](#testing)
+    + [Find testing here[text](TESTING.md)](#find-testing-here-text--testingmd-)
+  * [Deployment - Heroku](#deployment---heroku)
+    + [Create the Heroku App:](#create-the-heroku-app-)
+    + [Attach the Postgres database:](#attach-the-postgres-database-)
+    + [Update Heroku Config Vars](#update-heroku-config-vars)
+    + [Deploy](#deploy)
+  * [AWS Set Up](#aws-set-up)
+    + [AWS S3 Bucket](#aws-s3-bucket)
+    + [IAM](#iam)
+    + [Connecting S3 to Django](#connecting-s3-to-django)
+  * [Forking this repository](#forking-this-repository)
+  * [Cloning this repository](#cloning-this-repository)
+  * [Languages](#languages)
+  * [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  * [Credits](#credits)
+  * [Acknowledgments](#acknowledgments)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
-Here's a well-structured **Project Board** organized by EPICs and User Stories, with clear status tracking:
 
-# Emarket Project Board
+#  Project Board
 
 ## 📋 EPIC 1: Viewing & Navigation
 | User Story | Status | Component | Test Status |
@@ -73,7 +88,7 @@ Here's a well-structured **Project Board** organized by EPICs and User Stories, 
 | Category browsing | ✅ Done | Categories | ✅ Passed |
 | Product search | ✅ Done | Search | ✅ Passed |
 | Product sorting | ✅ Done | Sorting | ✅ Passed |
-| LEGO category showcase | 🚧 In Progress | Categories | ⚠️ Testing |
+| LEGO category | 🚧 In Progress | Categories | ⚠️ Testing |
 | LEGO STORY section | ✅ Done | Blog | ✅ Passed |
 | User build gallery | ❌ Backlog | Gallery | ❌ Pending |
 
@@ -115,7 +130,7 @@ Here's a well-structured **Project Board** organized by EPICs and User Stories, 
 | Admin | 75% | 80% |
 
 ## 🔗 Resources
-- [Stripe Docs](https://stripe.com/docs) `rel="noopener noreferrer"`
+- [Stripe Docs](https://stripe.com/docs) `rel="nofollow noreferrer"`
 - [Django AllAuth](https://django-allauth.readthedocs.io/) `rel="noopener"`
 
 ## 👥 Team Responsibilities
@@ -129,11 +144,8 @@ Key Features:
 1. **Color-coded statuses**: ✅ Done, 🚧 In Progress, ❌ Backlog
 2. **Test coverage tracking** for each component
 3. **EPIC-level progress metrics**
-4. **External resources** with proper `rel` attributes
-5. **Clear ownership** of components
+4. **External resources** with proper `rel` attributes  [Rel Attribute](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links)
 6. **Mobile-responsive** layout
-
-
 
 
 ## User Experience (UX)
@@ -508,6 +520,55 @@ E-Market's business model is Business to Consumer (B2C). Products and services a
 
 ![FACEBOOK](media/FB.jpeg)
 
+Here's your updated **Project Board** with the requested SEO enhancements and technical documentation:
+
+
+## 🔍 SEO & Technical Setup
+
+| Component | Status | Details |
+|-----------|--------|---------|
+| `robots.txt` | ✅ Live | [View file](robots.txt) |
+| `sitemap.xml` | ✅ Live | [View sitemap](sitemap.xml) |
+| External Links | Updated | `rel="nofollow noreferrer"` applied |
+
+## 📋 EPIC 1: Viewing & Navigation
+| User Story | Status | SEO Impact |
+|------------|--------|------------|
+| LEGO category showcase | 🚧 In Progress | Schema markup pending |
+| Product search | ✅ Done | Search console integrated |
+
+## 👤 EPIC 2: User Account
+| User Story | Status | SEO Impact |
+|------------|--------|------------|
+| Profile pages | ✅ Done | `noindex` meta tag applied |
+
+## 💳 EPIC 3: Purchasing
+| User Story | Status | SEO Impact |
+|------------|--------|------------|
+| Checkout flow | 🚧 In Progress | Canonical tags implemented |
+
+## ⚙️ EPIC 4: Admin
+| User Story | Status | Technical Details |
+|------------|--------|-------------------|
+| Product management | ✅ Done | Auto-sitemap generation |
+
+## 🛠 Technical Backlog
+| Task | Priority | SEO Value |
+|------|----------|-----------|
+| Add structured data | High | Rich snippets potential |
+| Optimize image alt texts | Medium | Accessibility boost |
+
+## 📊 SEO Metrics
+| Metric | Current | Target |
+|--------|---------|--------|
+| Indexed Pages | 42 | 65+ |
+| Crawl Errors | 3 | 0 |
+
+## 🔗 Resources
+- [Rel Attribute](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links) `rel="nofollow noreferrer"`
+- [Google Search Console](https://search.google.com/search-console) `rel="nofollow noreferrer"`
+
+
 ## Testing
 ### Find testing here[text](TESTING.md)
 
@@ -759,6 +820,7 @@ To clone this repository follow the below steps:
 - [Privacy Policy Generator](https://www.privacypolicygenerator.info/): Used to create the site's privacy policy
 - [Mailchimp](https://mailchimp.com/?currency=EUR): Used to create the newsletter signup functionality.
 - [chatgpt](openai.com): Openai
+- [deepseek](deepseek.com): Deepseek
 
 
 ## Credits
