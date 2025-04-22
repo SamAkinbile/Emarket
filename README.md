@@ -61,7 +61,7 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
     + [Find testing here[text](TESTING.md)](#find-testing-here-text--testingmd-)
   * [Deployment - Heroku](#deployment---heroku)
     + [Create the Heroku App:](#create-the-heroku-app-)
-    + [Attach the Postgres database:](#attach-the-postgres-database-)
+    + [Attach the Postgres database:](#attach-the-postgres-database-) 
     + [Update Heroku Config Vars](#update-heroku-config-vars)
     + [Deploy](#deploy)
   * [AWS Set Up](#aws-set-up)
@@ -128,10 +128,6 @@ The live link can be found here - [Emarket](https://emar-423e8a6d3ba4.herokuapp.
 | Accounts | 100% | 100% |
 | Purchasing | 60% | 45% |
 | Admin | 75% | 80% |
-
-## 🔗 Resources
-- [Stripe Docs](https://stripe.com/docs) `rel="nofollow noreferrer"`
-- [Django AllAuth](https://django-allauth.readthedocs.io/) `rel="noopener"`
 
 ## 👥 Team Responsibilities
 | Area | Owner | Status |
@@ -520,8 +516,6 @@ E-Market's business model is Business to Consumer (B2C). Products and services a
 
 ![FACEBOOK](media/FB.jpeg)
 
-Here's your updated **Project Board** with the requested SEO enhancements and technical documentation:
-
 
 ## 🔍 SEO & Technical Setup
 
@@ -558,15 +552,10 @@ Here's your updated **Project Board** with the requested SEO enhancements and te
 | Add structured data | High | Rich snippets potential |
 | Optimize image alt texts | Medium | Accessibility boost |
 
-## 📊 SEO Metrics
-| Metric | Current | Target |
-|--------|---------|--------|
-| Indexed Pages | 42 | 65+ |
-| Crawl Errors | 3 | 0 |
 
 ## 🔗 Resources
 - [Rel Attribute](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links) `rel="nofollow noreferrer"`
-- [Google Search Console](https://search.google.com/search-console) `rel="nofollow noreferrer"`
+
 
 
 ## Testing
